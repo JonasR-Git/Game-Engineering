@@ -1,4 +1,4 @@
-name: testing and deploy WebGL pipeline
+name: Testing and deploy WebGL pipeline
 
 on: push
 
