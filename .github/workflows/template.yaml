@@ -1,4 +1,4 @@
-name: GameCI Template 🎮
+name: testing and deploy WebGL pipeline
 
 on: push
 
@@ -16,7 +16,7 @@ jobs:
 
   testRunner:
     needs: checkLicense
-    name: Test all modes 📝
+    name: Test Edit and Play mode
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -145,6 +145,25 @@ jobs:
           name: build-StandaloneWindows64
           path: build/StandaloneWindows64
           uses: actions/checkout@v2
+          
+  deployPages:
+    needs: buildWebGL
+    name: Deploy PGD WebGL to Github Pages 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: build-WebGL
+          path: build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages
+          folder: build/WebGL
 
       - uses: actions/download-artifact@v2
         with:
@@ -158,5 +177,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          branch: gh-pages
+          branch: WebGL-Page
           folder: build/WebGL
