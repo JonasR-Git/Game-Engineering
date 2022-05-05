@@ -50,7 +50,7 @@ jobs:
       - uses: game-ci/unity-test-runner@v2
         id: testRunner
         with:
- 	  projectPath: test-projects/test-project
+ 	  projectPath: PGTD
           testMode: all
           
       - uses: actions/upload-artifact@v2
@@ -96,7 +96,7 @@ jobs:
       - uses: game-ci/unity-builder@v2
         with:
           targetPlatform: WebGL
-          projectPath: test-projects/test-project
+          projectPath: PGTD
 
       - uses: actions/upload-artifact@v2
         with:
@@ -141,7 +141,7 @@ jobs:
       - uses: game-ci/unity-builder@v2
         with:
           targetPlatform: StandaloneWindows64
-	  projectPath: test-projects/test-project
+	  projectPath: PGTD
 
       - uses: actions/upload-artifact@v2
         with:
