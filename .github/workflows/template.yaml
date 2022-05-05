@@ -50,7 +50,7 @@ jobs:
       - uses: game-ci/unity-test-runner@v2
         id: testRunner
         with:
- 	  projectPath: PGTD
+ 	        projectPath: PGTD
           testMode: all
           
       - uses: actions/upload-artifact@v2
@@ -132,7 +132,7 @@ jobs:
       - name: Restore Library cache
         uses: actions/cache@v2
         with:
-          path: Library
+          path: PGTD/Library
           key: Library-build-StandaloneWindows64
           restore-keys: |
             Library-build-
