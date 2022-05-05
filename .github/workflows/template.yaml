@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     matrix:
       projectPath:
-        - PGTD
+        - potato-graphics-tower-defence
       unityVersion:
         - 2021.3.1f1
     steps:
