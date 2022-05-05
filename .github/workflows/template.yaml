@@ -18,6 +18,11 @@ jobs:
     needs: checkLicense
     name: Test Edit and Play mode
     runs-on: ubuntu-latest
+    matrix:
+      projectPath:
+        - PGTD
+      unityVersion:
+        - 2021.3.1f1
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -26,7 +31,7 @@ jobs:
         run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
 
       - name: Restore LFS cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: lfs-cache
         with:
           path: .git/lfs
@@ -39,7 +44,7 @@ jobs:
           git reset --hard
 
       - name: Restore Library cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: PGTD/Library
           key: Library-test-project
@@ -50,8 +55,9 @@ jobs:
       - uses: game-ci/unity-test-runner@v2
         id: testRunner
         with:
- 	        projectPath: PGTD
+ 	        projectPath: ${{ matrix.projectPath }}
           testMode: all
+          unityVersion: ${{ matrix.unityVersion }}
           
       - uses: actions/upload-artifact@v2
         with:
@@ -72,7 +78,7 @@ jobs:
         run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
 
       - name: Restore LFS cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: lfs-cache
         with:
           path: .git/lfs
@@ -85,7 +91,7 @@ jobs:
           git reset --hard
 
       - name: Restore Library cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: PGTD/Library
           key: Library-build-WebGL
@@ -96,7 +102,7 @@ jobs:
       - uses: game-ci/unity-builder@v2
         with:
           targetPlatform: WebGL
-          projectPath: PGTD
+          projectPath: ${{ matrix.projectPath }}
 
       - uses: actions/upload-artifact@v2
         with:
@@ -117,7 +123,7 @@ jobs:
         run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
 
       - name: Restore LFS cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: lfs-cache
         with:
           path: .git/lfs
@@ -130,7 +136,7 @@ jobs:
           git reset --hard
 
       - name: Restore Library cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: PGTD/Library
           key: Library-build-StandaloneWindows64
@@ -141,7 +147,7 @@ jobs:
       - uses: game-ci/unity-builder@v2
         with:
           targetPlatform: StandaloneWindows64
-	  projectPath: PGTD
+	        projectPath: ${{ matrix.projectPath }}
 
       - uses: actions/upload-artifact@v2
         with:
