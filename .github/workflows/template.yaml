@@ -95,7 +95,7 @@ jobs:
       - name: Restore Library cache
         uses: actions/cache@v2
         with:
-          path: PGTD/Library
+          path: ${{ matrix.projectPath }}/Library
           key: Library-build-WebGL
           restore-keys: |
             Library-build-
@@ -103,8 +103,8 @@ jobs:
 
       - uses: game-ci/unity-builder@v2
         with:
-          targetPlatform: WebGL
           projectPath: ${{ matrix.projectPath }}
+          targetPlatform: WebGL
 
       - uses: actions/upload-artifact@v2
         with:
@@ -140,7 +140,7 @@ jobs:
       - name: Restore Library cache
         uses: actions/cache@v2
         with:
-          path: PGTD/Library
+          path: ${{ matrix.projectPath }}/Library
           key: Library-build-StandaloneWindows64
           restore-keys: |
             Library-build-
@@ -148,6 +148,7 @@ jobs:
 
       - uses: game-ci/unity-builder@v2
         with:
+          projectPath: ${{ matrix.projectPath }}
           targetPlatform: StandaloneWindows64
 
       - uses: actions/upload-artifact@v2
