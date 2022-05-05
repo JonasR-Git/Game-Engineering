@@ -146,7 +146,6 @@ jobs:
       - uses: game-ci/unity-builder@v2
         with:
           targetPlatform: StandaloneWindows64
-	        projectPath: ${{ matrix.projectPath }}
 
       - uses: actions/upload-artifact@v2
         with:
