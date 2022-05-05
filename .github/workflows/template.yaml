@@ -41,7 +41,7 @@ jobs:
       - name: Restore Library cache
         uses: actions/cache@v2
         with:
-          path: Library
+          path: PGTD/Library
           key: Library-test-project
           restore-keys: |
             Library-test-project-
@@ -86,7 +86,7 @@ jobs:
       - name: Restore Library cache
         uses: actions/cache@v2
         with:
-          path: Library
+          path: PGTD/Library
           key: Library-build-WebGL
           restore-keys: |
             Library-build-
