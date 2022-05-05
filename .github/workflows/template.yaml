@@ -18,11 +18,12 @@ jobs:
     needs: checkLicense
     name: Test Edit and Play mode
     runs-on: ubuntu-latest
-    matrix:
-      projectPath:
-        - potato-graphics-tower-defence
-      unityVersion:
-        - 2021.3.1f1
+    strategy:
+      matrix:
+        projectPath:
+          - potato-graphics-tower-defence
+        unityVersion:
+          - 2021.3.1f1
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
