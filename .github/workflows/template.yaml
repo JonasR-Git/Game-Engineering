@@ -47,12 +47,12 @@ jobs:
             Library-test-project-
             Library-
 
-      - uses: webbertakken/unity-test-runner@v2
+      - uses: game-ci/unity-test-runner@v2
         id: testRunner
         with:
+ 	  projectPath: test-projects/test-project
           testMode: all
-          projectPath: test-projects/test-project
-
+          
       - uses: actions/upload-artifact@v2
         with:
           name: Test results (all modes)
@@ -93,7 +93,7 @@ jobs:
             Library-build-
             Library-
 
-      - uses: webbertakken/unity-builder@v2
+      - uses: game-ci/unity-builder@v2
         with:
           targetPlatform: WebGL
           projectPath: test-projects/test-project
@@ -138,7 +138,7 @@ jobs:
             Library-build-
             Library-
 
-      - uses: webbertakken/unity-builder@v2
+      - uses: game-ci/unity-builder@v2
         with:
           targetPlatform: StandaloneWindows64
 	  projectPath: test-projects/test-project
