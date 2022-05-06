@@ -58,7 +58,7 @@ jobs:
       - uses: game-ci/unity-test-runner@v2
         id: testRunner
         with:
-          projectPath: ${{ matrix.projectPath }}/ProjectSettings
+          projectPath: ${{ matrix.projectPath }}
           testMode: all
           
       - uses: actions/upload-artifact@v2
