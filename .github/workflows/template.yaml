@@ -23,8 +23,6 @@ jobs:
       matrix:
         projectPath:
           - potato-graphics-tower-defence
-        testMode:
-          - editmode
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -54,6 +52,16 @@ jobs:
             Library-test-project-
             Library-
 
+      - uses: game-ci/unity-test-runner@v2
+        id: testRunner
+        with:
+          projectPath: ${{ matrix.projectPath }}
+          testMode: all
+          
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Test results (all modes)
+          path: ${{ steps.testRunner.outputs.artifactsPath }}
 
   buildWebGL:
     needs: testRunner
