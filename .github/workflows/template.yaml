@@ -55,7 +55,7 @@ jobs:
             Library-
 
   testRunner2:
-    needs: Test Editmode
+    needs: testRunner1
     name: Test Playmode
     runs-on: ubuntu-latest
     strategy:
