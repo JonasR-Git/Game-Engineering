@@ -69,6 +69,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
+      matrix:
+        projectPath:
+          - potato-graphics-tower-defence
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
