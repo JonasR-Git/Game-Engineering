@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 500
-    y: 51
-    width: 1206
-    height: 715
+    x: 0
+    y: 43
+    width: 1920
+    height: 1037
   m_ShowMode: 4
   m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -92,6 +92,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+    width: 363
+    height: 584
     width: 228
     height: 394
   m_MinSize: {x: 201, y: 221}
