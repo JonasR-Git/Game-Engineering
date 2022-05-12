@@ -1,12 +1,6 @@
 name: Testing and deploy WebGL pipeline
 
-on: 
-  push:
-    branches:
-      -'main'
-      -'BenDev'
-      -'JonasDev'
-
+on: push
 
 env:
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
