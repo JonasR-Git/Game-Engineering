@@ -6,13 +6,14 @@ using UnityEngine;
 public class EnemyTests
 {
     [Test]
-    public void TestMovingDirection()
+    public void TestMovingDirectionStart()
     {
         //ARRANGE
         var gameObject = new GameObject();
         var enemy = gameObject.AddComponent<Enemy>();
 
         Transform target = Path.waypoints[0];
+
         Vector3 expected_dir = target.position - enemy.transform.position;
 
         //ACT

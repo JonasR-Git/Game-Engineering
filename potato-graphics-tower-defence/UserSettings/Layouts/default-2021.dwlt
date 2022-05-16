@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 3440
     height: 1357
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Inspector
   m_RootView: {fileID: 9}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -40,11 +40,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 871
+    y: 706
     width: 813
-    height: 436
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+    height: 601
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 178
+  controlID: 159
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 925
     height: 660
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 137
+  controlID: 158
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 813
-    height: 871
+    height: 706
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
@@ -171,8 +171,8 @@ MonoBehaviour:
     y: 0
     width: 717
     height: 660
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -204,7 +204,7 @@ MonoBehaviour:
   - {fileID: 16}
   - {fileID: 20}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 138
+  controlID: 129
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -326,7 +326,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 139
+  controlID: 130
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -346,8 +346,8 @@ MonoBehaviour:
     y: 0
     width: 985
     height: 660
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -374,20 +374,20 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 2627
-    y: 944
+    y: 779
     width: 812
-    height: 415
+    height: 580
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 183
+    ID: 185
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
-    - 259
-    - 86
+    - 382
+    - 128
     relativeSizes:
     - 0.75
     - 0.25
@@ -397,7 +397,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 345
+    lastTotalSize: 510
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -465,9 +465,9 @@ MonoBehaviour:
       uniqueId: '[potato-graphics-tower-defence][suite]'
       name: potato-graphics-tower-defence
       fullName: potato-graphics-tower-defence
-      resultStatus: 0
-      duration: 0.0432104
-      messages: 
+      resultStatus: 2
+      duration: 0.038132
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -477,62 +477,28 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1004
-      uniqueId: '[Tests][D:/Praktikum_CG/PGTD_Git/Game-Engineering/potato-graphics-tower-defence/Library/ScriptAssemblies/Tests.dll][suite]'
-      name: Tests.dll
-      fullName: D:/Praktikum_CG/PGTD_Git/Game-Engineering/potato-graphics-tower-defence/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 0
-      duration: 0.0136204
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1000
-      parentUniqueId: '[potato-graphics-tower-defence][suite]'
-    - id: 1001
-      uniqueId: Tests.dll/[Tests][PathTests][suite]
-      name: PathTests
-      fullName: PathTests
-      resultStatus: 0
-      duration: 0.0126036
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1004
-      parentUniqueId: '[Tests][D:/Praktikum_CG/PGTD_Git/Game-Engineering/potato-graphics-tower-defence/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1002
-      uniqueId: Tests.dll/PathTests/[Tests][PathTests.Waypoints_Map1_Test]
-      name: Waypoints_Map1_Test
-      fullName: PathTests.Waypoints_Map1_Test
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/[Tests][PathTests][suite]
-    m_ResultText: 
-    m_ResultStacktrace: 
+    m_ResultText: "TestMovingDirection (0,004s)\n---\nUnityEngine.MissingReferenceException
+      : The object of type 'Transform' has been destroyed but you are still trying
+      to access it.\nYour script should either check if it is null or you should
+      not destroy the object.\n---\nat (wrapper managed-to-native) UnityEngine.Transform.get_position_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n 
+      at UnityEngine.Transform.get_position () [0x00000] in <823fb226a3f9439cb41fdcb61f9c86a1>:0
+      \r\n  at EnemyTests.TestMovingDirection () [0x00013] in D:\\Praktikum_CG\\PGTD_Git\\Game-Engineering\\potato-graphics-tower-defence\\Assets\\Editor\\Tests\\EditMode\\EnemyTests.cs:16
+      \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
+      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0"
+    m_ResultStacktrace: "  at (wrapper managed-to-native) UnityEngine.Transform.get_position_Injected(UnityEngine.Transform,UnityEngine.Vector3&)\r\n 
+      at UnityEngine.Transform.get_position () [0x00000] in <823fb226a3f9439cb41fdcb61f9c86a1>:0
+      \r\n  at EnemyTests.TestMovingDirection () [0x00013] in D:\\Praktikum_CG\\PGTD_Git\\Game-Engineering\\potato-graphics-tower-defence\\Assets\\Editor\\Tests\\EditMode\\EnemyTests.cs:16
+      \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
+      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 "
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fea6456c
-      m_LastClickedID: 1816504062
-      m_ExpandedIDs: d562058db45b4210fea6456cffffff7f
+      m_SelectedIDs: 5f463d4c
+      m_LastClickedID: 1279084127
+      m_ExpandedIDs: d562058db45b4210a231ff41fea6456cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -599,22 +565,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Editor/Tests/EditMode
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Editor/Tests/EditMode
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Praktikum_CG\PGTD_Git\Game-Engineering\potato-graphics-tower-defence
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2a620000
-    m_LastClickedID: 25130
-    m_ExpandedIDs: 00000000186200001a6200001c62000000ca9a3bffffff7f
+    m_SelectedIDs: 3a620000
+    m_LastClickedID: 25146
+    m_ExpandedIDs: 0000000024620000266200002862000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -642,7 +608,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000186200001a6200001c620000
+    m_ExpandedIDs: 00000000246200002662000028620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -721,7 +687,7 @@ MonoBehaviour:
     x: 2627
     y: 73
     width: 812
-    height: 850
+    height: 685
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -770,9 +736,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1e1a0000
+      m_SelectedIDs: 70620000
       m_LastClickedID: 0
-      m_ExpandedIDs: 2efbffff
+      m_ExpandedIDs: 2cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1094,7 +1060,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.50704813, y: 0.018607913, z: -0.010948051, w: -0.86163694}
     speed: 2
-    m_Value: {x: -0.50705266, y: 0.018608078, z: -0.010948149, w: -0.8616446}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
     m_Target: 0.19798817
     speed: 2
