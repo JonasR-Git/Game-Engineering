@@ -11142,7 +11142,7 @@ MonoBehaviour:
     numberOfEnemies: 15
     spawnRate: 3
   spawnPoint: {fileID: 1646579255}
-  timeBetweenWaves: 5
+  timeBetweenWaves: 10
   waveIndex: 0
   waveCounterText: {fileID: 2028207002}
   waveCountdownText: {fileID: 459150496}
