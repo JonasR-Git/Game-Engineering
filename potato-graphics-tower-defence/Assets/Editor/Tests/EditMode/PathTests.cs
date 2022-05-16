@@ -1,15 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
-using UnityEngine.TestTools;
 
 public class PathTests
 {
     [Test]
-    public void Waypoints_Test()
+    public void Waypoints_Map1_Test()
     {
+        /*ARRANGE
+        var waypoints = new Path();
+        var expection = new[] { };
+ 
+        //ACT 
 
+        //ASSERT
+
+        Assert.That(waypoints, Is.EqualTo(expection));
+        */
     }
-   
+
 }
