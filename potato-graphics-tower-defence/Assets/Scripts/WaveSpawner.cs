@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -8,11 +10,16 @@ public class WaveSpawner : MonoBehaviour
     public Wave[] waves;
     public Transform spawnPoint;
 
-    public float timeBetweenWaves = 3f;
-    private float countdown = 5f;
+    public float timeBetweenWaves = 10f;
+    private float countdown = 10f;
 
     public int waveIndex = 0;
     public static int AliveCounter = 0;
+    
+    
+
+    public Text waveCounterText;
+    public Text waveCountdownText;
 
 
     void Update()
@@ -25,6 +32,7 @@ public class WaveSpawner : MonoBehaviour
 
        if (countdown <= 0f)
         {
+            //Makes the SpawnWave timing is independent to the main time for the script 
             StartCoroutine(SpawnWave());
             countdown = timeBetweenWaves;
             return;
@@ -33,18 +41,24 @@ public class WaveSpawner : MonoBehaviour
 
         //reduce countdown by 1 every second
         countdown -= Time.deltaTime;
+        //Mathf cut the dezimals
+        waveCountdownText.text = "Next Wave: " + Mathf.Floor(countdown).ToString();
 
     }
     
+    //must be a Inumerator to can be called as a subroutine
     IEnumerator SpawnWave()
     {
         Wave wave = waves[waveIndex];
+        waveCounterText.text = "Wave: " + (waveIndex + 1).ToString();
 
         for (int i = 0; i < wave.numberOfEnemies; i++)
         {
             SpawnEnemy(wave.enemy);
+            //Time between the different Enemies
             yield return new WaitForSeconds(1f / wave.spawnRate);
         }
+
         waveIndex++;
     }
 
