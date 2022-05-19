@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
-    //in the future make it a array for different enemies
+
     public Wave[] waves;
     public Transform spawnPoint;
 
