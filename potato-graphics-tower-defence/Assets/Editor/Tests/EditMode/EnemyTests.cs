@@ -9,10 +9,10 @@ public class EnemyTests
     public void TestMovingDirectionStart()
     {
         //ARRANGE
-        var gameObject = new GameObject();
-        var enemy = gameObject.AddComponent<Enemy>();
+        var enemy = GameObject.Find("Start").transform;
+        GameObject Path = GameObject.Find("Waypoints");
 
-        Transform target = Path.waypoints[0];
+        Transform target = Path.transform.Find("Waypoint");
 
         Vector3 expected_dir = target.position - enemy.transform.position;
 
