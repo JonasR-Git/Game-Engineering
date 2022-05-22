@@ -3,12 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyTests
+public class EnemyTests : MonoBehaviour
 {
     [Test]
     public void TestMovingDirectionStart()
     {
-        /*
         //ARRANGE
         Transform enemy = GameObject.Find("Start").transform;
         GameObject Path = GameObject.Find("Waypoints");
@@ -22,6 +21,5 @@ public class EnemyTests
         //ASSERT
 
         Assert.AreEqual(expected_dir, (target.position - enemy.position));
-        */
     }
 }
