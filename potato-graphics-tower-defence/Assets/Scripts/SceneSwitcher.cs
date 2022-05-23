@@ -8,4 +8,8 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene("musterscene");
     }
+    public void leaveGame()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
 }
