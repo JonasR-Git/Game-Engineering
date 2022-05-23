@@ -65,4 +65,18 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
+
+
+
+    //For testing functions:
+
+    public float getHealth()
+    {
+        return health;
+    }
+
+    public float getStartHealth()
+    {
+        return startHealth;
+    }
 }

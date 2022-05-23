@@ -8,8 +8,12 @@ using UnityEngine.TestTools.Utils;
 using System;
 using UnityEditor;
 
-public class TestEnemyMoving
+public class TestEnemy
 {
+
+    //These are tests for the combined enemy from EnemyMovement and Enemy
+
+
     private int timeTillFirstWave = 8;
 
 
@@ -105,7 +109,7 @@ public class TestEnemyMoving
         var expectedSpeedSlow = enemyStartSpeed * 0.5f;
 
 
-        Assert.AreEqual(enemySpeedSlow, expectedSpeedSlow /*, "SlowTest failed.Enemy has the speed of " + gameObject.GetComponent<Enemy>().speed + " instead of " + gameObject.GetComponent<Enemy>().startSpeed * (1f - 0.1f) */);
+        Assert.AreEqual(enemySpeedSlow, expectedSpeedSlow, "SlowTest failed. Enemy has the speed of " + enemySpeedSlow + " instead of " + expectedSpeedSlow * (1f - 0.1f) );
 
     }
 
@@ -127,11 +131,11 @@ public class TestEnemyMoving
         //Wait a second so you can check it visual
         yield return new WaitForSecondsRealtime(1); 
 
-        var enemySpeedSlow = enemy.speed;
-        var expectedSpeedSlow = enemyStartSpeed * 1.5f;
+        var enemySpeedFaster = enemy.speed;
+        var expectedSpeedFaster = enemyStartSpeed * 1.5f;
 
 
-        Assert.AreEqual(enemySpeedSlow, expectedSpeedSlow /*, "SlowTest failed.Enemy has the speed of " + gameObject.GetComponent<Enemy>().speed + " instead of " + gameObject.GetComponent<Enemy>().startSpeed * (1f - 0.1f) */);
+        Assert.AreEqual(enemySpeedFaster, expectedSpeedFaster, "SlowTest failed. Enemy has the speed of " + enemySpeedFaster + " instead of " + expectedSpeedFaster * (1f - 0.1f) );
 
     }
 
@@ -151,11 +155,48 @@ public class TestEnemyMoving
         enemy.Slow(0.5f);
         enemy.normalSpeed();
 
-        var enemySpeedSlow = enemy.speed;
-        var expectedSpeedSlow = enemyStartSpeed;
+        var enemySpeedNormal = enemy.speed;
+        var expectedSpeedNormal = enemyStartSpeed;
 
 
-        Assert.AreEqual(enemySpeedSlow, expectedSpeedSlow /*, "SlowTest failed.Enemy has the speed of " + gameObject.GetComponent<Enemy>().speed + " instead of " + gameObject.GetComponent<Enemy>().startSpeed * (1f - 0.1f) */);
+        Assert.AreEqual(enemySpeedNormal, expectedSpeedNormal, "SlowTest failed. Enemy has the speed of " + enemySpeedNormal + " instead of " + expectedSpeedNormal * (1f - 0.1f) );
 
+    }
+    [UnityTest]
+    public IEnumerator EnemyTakeDamageAliveAfter()
+    {
+        SceneManager.LoadScene("musterscene");
+
+        //Wait for the first Wave (Enemy Spawning)
+        yield return new WaitForSecondsRealtime(timeTillFirstWave);
+
+        //Get an Enemy which is spawned
+        var enemy = GameObject.FindObjectOfType<Enemy>();
+
+        enemy.TakeDamage(enemy.getStartHealth() * 0.5f);
+
+        float expectedHealth = enemy.getStartHealth() * 0.5f;
+
+        yield return new WaitForSecondsRealtime(1);
+
+        Assert.AreEqual(enemy.getHealth(), expectedHealth, "TakeDamageTest failed, Enemy has " + enemy.getHealth() + "instead of " + expectedHealth);
+    }
+
+    [UnityTest]
+    public IEnumerator EnemyTakeDamageDeadAfter()
+    {
+        SceneManager.LoadScene("musterscene");
+
+        //Wait for the first Wave (Enemy Spawning)
+        yield return new WaitForSecondsRealtime(timeTillFirstWave);
+
+        //Get an Enemy which is spawned
+        var enemy = GameObject.FindObjectOfType<Enemy>();
+
+        enemy.TakeDamage(enemy.getHealth() + 1f);
+
+
+
+        Assert.IsNotNull(enemy);
     }
 }
