@@ -29,13 +29,13 @@ public class Enemy : MonoBehaviour
     {
         health -= damage;
 
-        healthBar.fillAmount = health / startHealth;
+        /*healthBar.fillAmount = health / startHealth;
 
         if (healthBar.fillAmount < 0.5)
         {
             //TODO after implementing the healthBar to change the color of the bar depending on the health
         }
-        
+        */
         if (health <= 0 && isAlive)
         {
             Died();

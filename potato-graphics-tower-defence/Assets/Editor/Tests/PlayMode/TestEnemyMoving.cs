@@ -173,13 +173,14 @@ public class TestEnemy
         //Get an Enemy which is spawned
         var enemy = GameObject.FindObjectOfType<Enemy>();
 
-        enemy.TakeDamage(enemy.getStartHealth() * 0.5f);
+        enemy.TakeDamage(enemy.getHealth() * 0.5f);
 
-        float expectedHealth = enemy.getStartHealth() * 0.5f;
+        var currentHealth = enemy.getHealth();
+        var expectedHealth = enemy.getStartHealth() * 0.5f;
 
-        yield return new WaitForSecondsRealtime(1);
+        //yield return new WaitForSecondsRealtime(1);
 
-        Assert.AreEqual(enemy.getHealth(), expectedHealth, "TakeDamageTest failed, Enemy has " + enemy.getHealth() + "instead of " + expectedHealth);
+        Assert.AreEqual(currentHealth, expectedHealth, "TakeDamageTest failed, Enemy has " + currentHealth + "instead of " + expectedHealth);
     }
 
     [UnityTest]
