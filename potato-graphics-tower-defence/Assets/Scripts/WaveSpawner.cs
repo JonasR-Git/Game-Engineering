@@ -60,6 +60,12 @@ public class WaveSpawner : MonoBehaviour
         }
 
         waveIndex++;
+
+        if(waveIndex == waves.Length)
+        {
+            Debug.Log("Last Wave Spawned");
+            this.enabled = false;
+        }
     }
 
     void SpawnEnemy(GameObject enemy)

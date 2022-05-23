@@ -88,20 +88,74 @@ public class TestEnemyMoving
     {
         SceneManager.LoadScene("musterscene");
 
-        var gameObject = new GameObject();
-        var enemy = gameObject.AddComponent<Enemy>();
+        //Wait for the first Wave (Enemy Spawning)
+        yield return new WaitForSecondsRealtime(timeTillFirstWave);
+
+        //Get an Enemy which is spawned
+        var enemy = GameObject.FindObjectOfType<Enemy>();
 
         var enemyStartSpeed = enemy.speed;
 
-        enemy.Slow(0.1f);
+        enemy.Slow(0.5f);
+
+        //Wait a second so you can check it visual
+        yield return new WaitForSecondsRealtime(1);
 
         var enemySpeedSlow = enemy.speed;
-        var expectedSpeedSlow = enemyStartSpeed * 0.9f;
+        var expectedSpeedSlow = enemyStartSpeed * 0.5f;
 
 
         Assert.AreEqual(enemySpeedSlow, expectedSpeedSlow /*, "SlowTest failed.Enemy has the speed of " + gameObject.GetComponent<Enemy>().speed + " instead of " + gameObject.GetComponent<Enemy>().startSpeed * (1f - 0.1f) */);
 
-        yield return 0;
     }
 
+    [UnityTest]
+    public IEnumerator EnemyGettingFaster()
+    {
+        SceneManager.LoadScene("musterscene");
+
+        //Wait for the first Wave (Enemy Spawning)
+        yield return new WaitForSecondsRealtime(timeTillFirstWave);
+
+        //Get an Enemy which is spawned
+        var enemy = GameObject.FindObjectOfType<Enemy>();
+
+        var enemyStartSpeed = enemy.speed;
+
+        enemy.Fast(0.5f);
+
+        //Wait a second so you can check it visual
+        yield return new WaitForSecondsRealtime(1); 
+
+        var enemySpeedSlow = enemy.speed;
+        var expectedSpeedSlow = enemyStartSpeed * 1.5f;
+
+
+        Assert.AreEqual(enemySpeedSlow, expectedSpeedSlow /*, "SlowTest failed.Enemy has the speed of " + gameObject.GetComponent<Enemy>().speed + " instead of " + gameObject.GetComponent<Enemy>().startSpeed * (1f - 0.1f) */);
+
+    }
+
+    [UnityTest]
+    public IEnumerator EnemyGettingNormalSpeed()
+    {
+        SceneManager.LoadScene("musterscene");
+
+        //Wait for the first Wave (Enemy Spawning)
+        yield return new WaitForSecondsRealtime(timeTillFirstWave);
+
+        //Get an Enemy which is spawned
+        var enemy = GameObject.FindObjectOfType<Enemy>();
+
+        var enemyStartSpeed = enemy.speed;
+
+        enemy.Slow(0.5f);
+        enemy.normalSpeed();
+
+        var enemySpeedSlow = enemy.speed;
+        var expectedSpeedSlow = enemyStartSpeed;
+
+
+        Assert.AreEqual(enemySpeedSlow, expectedSpeedSlow /*, "SlowTest failed.Enemy has the speed of " + gameObject.GetComponent<Enemy>().speed + " instead of " + gameObject.GetComponent<Enemy>().startSpeed * (1f - 0.1f) */);
+
+    }
 }
