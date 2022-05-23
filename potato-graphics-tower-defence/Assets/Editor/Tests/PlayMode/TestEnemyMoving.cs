@@ -81,6 +81,7 @@ public class TestEnemyMoving
         
 
         Assert.That((position2 - position1) , Is.Not.EqualTo(newPosition2 - newPosition1).Using(comparer), "MoveTest failed. Enemy changed doen't changed his moving direction: " + (position2 - position1) + " after: " + (newPosition2 - newPosition1));
+        SceneManager.UnloadSceneAsync("musterscene");
     }
 
     [UnityTest]
@@ -93,7 +94,7 @@ public class TestEnemyMoving
 
         var enemyStartSpeed = enemy.speed;
 
-        enemy.Slow(0.1f);
+        gameObject.GetComponent<Enemy>().Slow(0.1f);
 
         var enemySpeedSlow = enemy.speed;
         var expectedSpeedSlow = enemyStartSpeed * 0.9f;
