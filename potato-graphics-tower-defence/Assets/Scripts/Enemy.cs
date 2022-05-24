@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     public float startSpeed = 10f;
     private float startHealth = 100;
     private int bounty = 10;
-    private PlayerStats player = new PlayerStats();
+    private PlayerStats player;
 
     [HideInInspector] //So you can't change it from the Inspector
     public float speed;
@@ -23,6 +23,7 @@ public class Enemy : MonoBehaviour
     {
         speed = startSpeed;
         health = startHealth;
+        player = FindObjectOfType<PlayerStats>();
     }
 
     public void TakeDamage(float damage)

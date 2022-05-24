@@ -38,4 +38,15 @@ public class PlayerStats : MonoBehaviour
             SceneManager.LoadScene("Main Menu");
         }
     }
+
+    public int getMoney()
+    {
+        return money;
+    }
+
+    public int getStartMoney()
+    {
+        return startMoney;
+    }
+
 }

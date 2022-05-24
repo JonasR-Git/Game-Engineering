@@ -1161,7 +1161,6 @@ GameObject:
   - component: {fileID: 113329683}
   - component: {fileID: 113329682}
   - component: {fileID: 113329681}
-  - component: {fileID: 113329685}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1256,22 +1255,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &113329685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 113329680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8492cc6c1e7ebae408ffbb69e66ecb1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startMoney: 180
-  startLives: 30
-  livesText: {fileID: 1421458894}
-  moneyText: {fileID: 1148255476}
 --- !u!1001 &133880617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9793,7 +9776,6 @@ GameObject:
   - component: {fileID: 1148255475}
   - component: {fileID: 1148255477}
   - component: {fileID: 1148255476}
-  - component: {fileID: 1148255478}
   m_Layer: 5
   m_Name: MoneyCounter
   m_TagString: Untagged
@@ -9863,22 +9845,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148255474}
   m_CullTransparentMesh: 1
---- !u!114 &1148255478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148255474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8492cc6c1e7ebae408ffbb69e66ecb1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startMoney: 180
-  startLives: 30
-  livesText: {fileID: 0}
-  moneyText: {fileID: 0}
 --- !u!1001 &1150493057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11821,7 +11787,6 @@ GameObject:
   - component: {fileID: 1421458893}
   - component: {fileID: 1421458895}
   - component: {fileID: 1421458894}
-  - component: {fileID: 1421458896}
   m_Layer: 5
   m_Name: LiveCounter
   m_TagString: Untagged
@@ -11891,22 +11856,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421458892}
   m_CullTransparentMesh: 1
---- !u!114 &1421458896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421458892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8492cc6c1e7ebae408ffbb69e66ecb1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startMoney: 180
-  startLives: 30
-  livesText: {fileID: 0}
-  moneyText: {fileID: 0}
 --- !u!1001 &1424340431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14931,6 +14880,7 @@ GameObject:
   - component: {fileID: 1829586566}
   - component: {fileID: 1829586565}
   - component: {fileID: 1829586567}
+  - component: {fileID: 1829586568}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -14992,6 +14942,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c13d5ef072f8124d822b1c59db5f9bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1829586568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829586564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8492cc6c1e7ebae408ffbb69e66ecb1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 180
+  startLives: 30
+  livesText: {fileID: 1421458894}
+  moneyText: {fileID: 1148255476}
 --- !u!1001 &1841329796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16479,6 +16445,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6930752386789153100, guid: f0d3fa1e94e66cb46b696cd61724c9d8, type: 3}
   m_PrefabInstance: {fileID: 1986858995}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1988110845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1988110847}
+  - component: {fileID: 1988110846}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1988110846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988110845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8492cc6c1e7ebae408ffbb69e66ecb1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 180
+  startLives: 30
+  livesText: {fileID: 1421458894}
+  moneyText: {fileID: 1148255476}
+--- !u!4 &1988110847
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988110845}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 33.32271, y: 49.560974, z: 40.41322}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1993725834
 PrefabInstance:
   m_ObjectHideFlags: 0
