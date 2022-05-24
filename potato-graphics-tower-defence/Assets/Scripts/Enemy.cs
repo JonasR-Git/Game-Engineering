@@ -8,12 +8,12 @@ public class Enemy : MonoBehaviour
     public float startSpeed = 10f;
     private float startHealth = 100;
     private int bounty = 10;
+    private PlayerStats player = new PlayerStats();
 
     [HideInInspector] //So you can't change it from the Inspector
     public float speed;
 
     private float health;
-
     private bool isAlive = true;
 
     //Shows the healthBar and need to be % filled with % of the current health 
@@ -59,6 +59,7 @@ public class Enemy : MonoBehaviour
     void Died()
     {
         isAlive = false;
+        player.ChangeMoney(bounty);
 
         WaveSpawner.AliveCounter--;
 
