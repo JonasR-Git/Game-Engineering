@@ -34,6 +34,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (wavepointIndex >= Path.waypoints.Length - 1)
         {
+            enemy.ReachedEnd();
             Destroy(gameObject);
             //Don't jump to the lower code before Destroying the gameObject
             return;

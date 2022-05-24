@@ -60,9 +60,13 @@ public class Enemy : MonoBehaviour
     {
         isAlive = false;
         player.ChangeMoney(bounty);
-
         WaveSpawner.AliveCounter--;
-
+        Destroy(gameObject);
+    }
+    public void ReachedEnd()
+    {
+        player.ChangeLive();
+        WaveSpawner.AliveCounter--;
         Destroy(gameObject);
     }
 

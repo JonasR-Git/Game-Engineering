@@ -1268,10 +1268,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8492cc6c1e7ebae408ffbb69e66ecb1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 200
-  startLives: 40
-  livesText: {fileID: 0}
-  moneyText: {fileID: 0}
+  startMoney: 180
+  startLives: 30
+  livesText: {fileID: 1421458894}
+  moneyText: {fileID: 1148255476}
 --- !u!1001 &133880617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9808,9 +9808,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148255474}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 74}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 113329684}
@@ -9818,7 +9818,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -551.5, y: -45.200012}
+  m_AnchoredPosition: {x: -551.5, y: -45.19995}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1148255476
@@ -9875,10 +9875,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8492cc6c1e7ebae408ffbb69e66ecb1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 200
-  startLives: 40
+  startMoney: 180
+  startLives: 30
   livesText: {fileID: 0}
-  moneyText: {fileID: 1148255476}
+  moneyText: {fileID: 0}
 --- !u!1001 &1150493057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11903,9 +11903,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8492cc6c1e7ebae408ffbb69e66ecb1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 200
-  startLives: 40
-  livesText: {fileID: 1421458894}
+  startMoney: 180
+  startLives: 30
+  livesText: {fileID: 0}
   moneyText: {fileID: 0}
 --- !u!1001 &1424340431
 PrefabInstance:
