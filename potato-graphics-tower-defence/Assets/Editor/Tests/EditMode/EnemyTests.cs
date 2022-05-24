@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.TestRunner;
 
-public class EnemyTests : MonoBehaviour
+public class EnemyTests
 {
     [Test]
     public void TestMovingDirectionStart()
