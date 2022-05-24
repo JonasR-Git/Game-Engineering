@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
     public static int money;
-    public int startMoney = 200;
+    public int startMoney = 180;
 
     public static int lives;
-    public  int startLives = 40;
+    public  int startLives = 30;
     public Text livesText;
     public Text moneyText;
-    void Start()
+    void Awake()
     {
         money = startMoney;
         lives = startLives;
@@ -28,5 +29,13 @@ public class PlayerStats : MonoBehaviour
     public void ChangeMoney(int bounty)
     {
         money += bounty;
+    }
+    public void ChangeLive()
+    {
+        --lives;
+        if (lives == 0)
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
     }
 }
