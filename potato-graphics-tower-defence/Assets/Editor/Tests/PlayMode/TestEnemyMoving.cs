@@ -20,7 +20,7 @@ public class TestEnemy
     [UnityTest]
     public IEnumerator EnemySpawnsInFirstWave()
     {
-        SceneManager.LoadScene("musterscene");
+        SceneManager.LoadScene("Testscene");
 
         //Wait for the first Wave (Enemy Spawning)
         yield return new WaitForSecondsRealtime(timeTillFirstWave);
@@ -35,7 +35,7 @@ public class TestEnemy
     [UnityTest]
     public IEnumerator EnemyMovesAfterGameStarts()
     {
-        SceneManager.LoadScene("musterscene");
+        SceneManager.LoadScene("Testscene");
 
         //Wait for the first Wave (Enemy Spawning)
         yield return new WaitForSecondsRealtime(timeTillFirstWave);
@@ -56,7 +56,7 @@ public class TestEnemy
     [UnityTest]
     public IEnumerator EnemyChangesDirection()
     {
-        SceneManager.LoadScene("musterscene");
+        SceneManager.LoadScene("Testscene");
 
         var comparer = new Vector3EqualityComparer(0.05f);
 
@@ -90,7 +90,7 @@ public class TestEnemy
     [UnityTest]
     public IEnumerator EnemyGettingSlowed()
     {
-        SceneManager.LoadScene("musterscene");
+        SceneManager.LoadScene("Testscene");
 
         //Wait for the first Wave (Enemy Spawning)
         yield return new WaitForSecondsRealtime(timeTillFirstWave);
@@ -116,7 +116,7 @@ public class TestEnemy
     [UnityTest]
     public IEnumerator EnemyGettingFaster()
     {
-        SceneManager.LoadScene("musterscene");
+        SceneManager.LoadScene("Testscene");
 
         //Wait for the first Wave (Enemy Spawning)
         yield return new WaitForSecondsRealtime(timeTillFirstWave);
@@ -142,7 +142,7 @@ public class TestEnemy
     [UnityTest]
     public IEnumerator EnemyGettingNormalSpeed()
     {
-        SceneManager.LoadScene("musterscene");
+        SceneManager.LoadScene("Testscene");
 
         //Wait for the first Wave (Enemy Spawning)
         yield return new WaitForSecondsRealtime(timeTillFirstWave);
@@ -165,7 +165,7 @@ public class TestEnemy
     [UnityTest]
     public IEnumerator EnemyTakeDamageAliveAfter()
     {
-        SceneManager.LoadScene("musterscene");
+        SceneManager.LoadScene("Testscene");
 
         //Wait for the first Wave (Enemy Spawning)
         yield return new WaitForSecondsRealtime(timeTillFirstWave);
@@ -186,7 +186,7 @@ public class TestEnemy
     [UnityTest]
     public IEnumerator EnemyTakeDamageDeadAfter()
     {
-        SceneManager.LoadScene("musterscene");
+        SceneManager.LoadScene("Testscene");
 
         //Wait for the first Wave (Enemy Spawning)
         yield return new WaitForSecondsRealtime(timeTillFirstWave);

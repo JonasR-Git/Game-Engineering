@@ -13,7 +13,7 @@ public class PlayerTests
     [UnityTest]
     public IEnumerator AddMoneyIfEnemyDies ()
     {
-        SceneManager.LoadScene("musterscene");
+        SceneManager.LoadScene("Testscene");
 
         //Wait for the first Wave (Enemy Spawning)
         yield return new WaitForSecondsRealtime(8);
