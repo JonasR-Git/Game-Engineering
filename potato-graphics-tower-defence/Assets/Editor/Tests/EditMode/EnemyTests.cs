@@ -9,12 +9,20 @@ public class EnemyTests
     [Test]
     public void TestMovingDirectionStart()
     {
-        Transform enemy = GameObject.Find("Start").transform;
-        GameObject Path = GameObject.Find("Waypoints");
+        GameObject gameObj1 = new GameObject();
+        GameObject gameObj2 = new GameObject();
+        PlayerStats player = gameObj1.AddComponent<PlayerStats>();
+        Enemy enemy = gameObj2.AddComponent<Enemy>();
 
-        Transform target = Path.transform.Find("Waypoint");
+        var moneyStart = player.getMoney();
 
-        Assert.IsNotNull(target.position - enemy.position);
+        enemy.TakeDamage(enemy.getHealth());
+
+        var moneyAfter = player.getMoney();
+
+        var moneyexpected = moneyStart + 10;
+
+        Assert.AreEqual(moneyAfter, moneyexpected);
     }
 
 }
