@@ -16,7 +16,7 @@ jobs:
 
   testRunner:
     needs: checkLicense
-    name: Test Editmode
+    name: Test Modes
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -56,7 +56,7 @@ jobs:
         id: testRunner
         with:
           projectPath: ${{ matrix.projectPath }}
-          testMode: all
+          testMode: playmode
           
       - uses: actions/upload-artifact@v2
         with:
