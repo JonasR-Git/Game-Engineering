@@ -3863,6 +3863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  targetfarthest: 1
   range: 12
   rotationSpeed: 15
   enemyTag: Enemy
