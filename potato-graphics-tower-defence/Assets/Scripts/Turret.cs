@@ -5,12 +5,15 @@ using UnityEngine;
 public class Turret : MonoBehaviour
 {
     //public for testing
-    [HideInInspector]
+    
     public Transform target;
+    private bool targetfarthest = false;
 
     public float range = 12f; //3 Tiles
 
     public string enemyTag = "Enemy";
+
+    public Transform partToRotate;
 
     // Start is called before the first frame update
     void Start()
@@ -21,12 +24,13 @@ public class Turret : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        UpdateTarget();
         //tower needs nothing to do while he has no target
         if (target == null)
             return;
     }
 
-    //drawing the range from the turret
+    //drawing the range from the turret if selected to adjust it better
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
@@ -41,7 +45,7 @@ public class Turret : MonoBehaviour
         float shortestDistance = Mathf.Infinity;
         float farthestDistance = 0;
         GameObject nearestEnemy = null;
-        //GameObject farthestEnemy = null;
+        GameObject farthestEnemy = null;
 
         foreach (GameObject enemy in enemies)
         {
@@ -51,19 +55,33 @@ public class Turret : MonoBehaviour
                 shortestDistance = distanceToEnemy;
                 nearestEnemy = enemy;
             }
-            /*if (distanceToEnemy > farthestDistance)
+            if (distanceToEnemy > farthestDistance)
             {
                 farthestDistance = distanceToEnemy;
                 farthestEnemy = enemy;
-            }*/
+            }
         }
-        if (nearestEnemy != null && shortestDistance <= range)
+        if (targetfarthest == false)
         {
-            target = nearestEnemy.transform;
+            if (nearestEnemy != null && shortestDistance <= range)
+            {
+                target = nearestEnemy.transform;
+            }
+            else
+            {
+                target = null;
+            }
         }
         else
         {
-            target = null;
+            if (farthestEnemy != null && farthestDistance <= range)
+            {
+                target = farthestEnemy.transform;
+            }
+            else
+            {
+                target = null;
+            }
         }
     }
 }
