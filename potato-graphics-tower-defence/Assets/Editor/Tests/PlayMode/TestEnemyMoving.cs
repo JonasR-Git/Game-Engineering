@@ -14,7 +14,7 @@ public class TestEnemy
     //These are tests for the combined enemy from EnemyMovement and Enemy
 
 
-    private int timeTillFirstWave = 8;
+    private int timeTillFirstWave = 1;
 
 
     [UnityTest]

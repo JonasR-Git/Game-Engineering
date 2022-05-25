@@ -24,7 +24,7 @@ public class PlayerTests
         //Get an Enemy which is spawned
         var enemy = GameObject.FindObjectOfType<Enemy>();
 
-        enemy.TakeDamage(enemy.getHealth() + 1f);
+        enemy.TakeDamage(enemy.getHealth() +1f);
 
         Assert.AreNotEqual(playermoney, player.getMoney());
     }
