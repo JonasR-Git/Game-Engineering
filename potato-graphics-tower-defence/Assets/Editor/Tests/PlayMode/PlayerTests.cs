@@ -28,4 +28,35 @@ public class PlayerTests
 
         Assert.AreNotEqual(playermoney, player.getMoney());
     }
+
+    [UnityTest]
+    public IEnumerator MonoBehaviourTest ()
+    {
+        yield return new MonoBehaviourTest<AddMoneyIfEnemyDiesMono>();
+
+    }
+    public class AddMoneyIfEnemyDiesMono : MonoBehaviour, IMonoBehaviourTest
+    {
+
+        private bool testFinished = false;
+
+        private void Awake()
+        {
+            var enemy = gameObject.AddComponent<Enemy>();
+            var player = gameObject.AddComponent<PlayerStats>();
+            var playermoney = player.getMoney();
+            enemy.TakeDamage(enemy.getHealth());
+
+            Assert.AreNotEqual(playermoney, player.getMoney());
+
+            testFinished = true;
+        }
+              // Required to tell test suite we are finished.
+
+        public bool IsTestFinished
+        {
+            get { return testFinished; }
+        }
+
+    }
 }
