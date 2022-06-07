@@ -7,9 +7,16 @@ using UnityEngine.SceneManagement;
 using UnityEngine.TestTools.Utils;
 using System;
 using UnityEditor;
+using System.Runtime.Serialization;
 
 public class PlayerTests
 {
+ 
+    public static T Create<T>()
+    {
+        return (T)FormatterServices.GetUninitializedObject(typeof(T));
+    }
+
     [UnityTest]
     public IEnumerator AddMoneyIfEnemyDies ()
     {
@@ -32,31 +39,24 @@ public class PlayerTests
     [UnityTest]
     public IEnumerator MonoBehaviourTest ()
     {
-        yield return new MonoBehaviourTest<AddMoneyIfEnemyDiesMono>();
+        var enemy = Create<Enemy>();
+        var player = Create<PlayerStats>();
+        var playermoney = player.getMoney();
+
+        Debug.Log(enemy.getHealth());
+
+        enemy.TakeDamage(enemy.getHealth());
+
+        Debug.Log(player.getMoney());
+        Debug.Log(enemy.getHealth());
+        
+
+        Assert.AreNotEqual(playermoney, player.getMoney());
+
+        yield return 0;
 
     }
-    public class AddMoneyIfEnemyDiesMono : MonoBehaviour, IMonoBehaviourTest
-    {
+ 
 
-        private bool testFinished = false;
-
-        private void Awake()
-        {
-            var enemy = gameObject.AddComponent<Enemy>();
-            var player = gameObject.AddComponent<PlayerStats>();
-            var playermoney = player.getMoney();
-            enemy.TakeDamage(enemy.getHealth());
-
-            Assert.AreNotEqual(playermoney, player.getMoney());
-
-            testFinished = true;
-        }
-              // Required to tell test suite we are finished.
-
-        public bool IsTestFinished
-        {
-            get { return testFinished; }
-        }
-
-    }
+    
 }
