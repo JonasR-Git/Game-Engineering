@@ -7,13 +7,14 @@ public class Turret : MonoBehaviour
     //public for testing
     
     public Transform target;
-    private bool targetfarthest = false;
+    public bool targetfarthest = false;
 
     public float range = 12f; //3 Tiles
-
+    public float rotationSpeed = 15f;
     public string enemyTag = "Enemy";
 
     public Transform partToRotate;
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,7 @@ public class Turret : MonoBehaviour
         //tower needs nothing to do while he has no target
         if (target == null)
             return;
+        UpdateRotation();
     }
 
     //drawing the range from the turret if selected to adjust it better
@@ -50,12 +52,14 @@ public class Turret : MonoBehaviour
         foreach (GameObject enemy in enemies)
         {
             float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
+
             if (distanceToEnemy < shortestDistance)
             {
                 shortestDistance = distanceToEnemy;
                 nearestEnemy = enemy;
             }
-            if (distanceToEnemy > farthestDistance)
+
+            if (distanceToEnemy > farthestDistance && distanceToEnemy < range)
             {
                 farthestDistance = distanceToEnemy;
                 farthestEnemy = enemy;
@@ -83,6 +87,14 @@ public class Turret : MonoBehaviour
                 target = null;
             }
         }
+    }
+
+    void UpdateRotation()
+    {
+        Vector3 dir = target.position - transform.position;
+        Quaternion lookRotation = Quaternion.LookRotation(dir);
+        Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime*rotationSpeed).eulerAngles;
+        partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
     }
 }
 

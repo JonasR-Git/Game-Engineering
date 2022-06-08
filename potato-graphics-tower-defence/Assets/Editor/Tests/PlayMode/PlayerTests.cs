@@ -7,9 +7,16 @@ using UnityEngine.SceneManagement;
 using UnityEngine.TestTools.Utils;
 using System;
 using UnityEditor;
+using System.Runtime.Serialization;
 
 public class PlayerTests
 {
+ 
+    public static T Create<T>()
+    {
+        return (T)FormatterServices.GetUninitializedObject(typeof(T));
+    }
+
     [UnityTest]
     public IEnumerator AddMoneyIfEnemyDies ()
     {
@@ -28,4 +35,28 @@ public class PlayerTests
 
         Assert.AreNotEqual(playermoney, player.getMoney());
     }
+
+    [UnityTest]
+    public IEnumerator MonoBehaviourTest ()
+    {
+        var enemy = Create<Enemy>();
+        var player = Create<PlayerStats>();
+        var playermoney = player.getMoney();
+
+        Debug.Log(enemy.getHealth());
+
+        enemy.TakeDamage(enemy.getHealth());
+
+        Debug.Log(player.getMoney());
+        Debug.Log(enemy.getHealth());
+        
+
+        Assert.AreNotEqual(playermoney, player.getMoney());
+
+        yield return 0;
+
+    }
+ 
+
+    
 }
