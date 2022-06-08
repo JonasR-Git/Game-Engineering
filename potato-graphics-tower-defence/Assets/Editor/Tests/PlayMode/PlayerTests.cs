@@ -23,7 +23,7 @@ public class PlayerTests
         SceneManager.LoadScene("Testscene");
 
         //Wait for the first Wave (Enemy Spawning)
-        yield return new WaitForSecondsRealtime(8);
+        yield return new WaitForSecondsRealtime(1);
 
         var player = GameObject.FindObjectOfType<PlayerStats>();
         var playermoney = player.getStartMoney();
@@ -36,26 +36,6 @@ public class PlayerTests
         Assert.AreNotEqual(playermoney, player.getMoney());
     }
 
-    [UnityTest]
-    public IEnumerator MonoBehaviourTest ()
-    {
-        var enemy = Create<Enemy>();
-        var player = Create<PlayerStats>();
-        var playermoney = player.getMoney();
-
-        Debug.Log(enemy.getHealth());
-
-        enemy.TakeDamage(enemy.getHealth());
-
-        Debug.Log(player.getMoney());
-        Debug.Log(enemy.getHealth());
-        
-
-        Assert.AreNotEqual(playermoney, player.getMoney());
-
-        yield return 0;
-
-    }
  
 
     

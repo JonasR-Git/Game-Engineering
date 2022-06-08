@@ -10,9 +10,9 @@ public class EnemyTests
     public void TestMovingDirectionStart()
     {
         GameObject gameObj1 = new GameObject();
-        GameObject gameObj2 = new GameObject();
+        WaveSpawner waveSpawner = gameObj1.AddComponent<WaveSpawner>();
         PlayerStats player = gameObj1.AddComponent<PlayerStats>();
-        Enemy enemy = gameObj2.AddComponent<Enemy>();
+        Enemy enemy = gameObj1.AddComponent<Enemy>();
 
         var moneyStart = player.getMoney();
 

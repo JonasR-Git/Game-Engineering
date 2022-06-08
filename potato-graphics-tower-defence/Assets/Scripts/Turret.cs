@@ -7,13 +7,24 @@ public class Turret : MonoBehaviour
     //public for testing
     
     public Transform target;
-    public bool targetfarthest = false;
 
+    [Header("Stats")]
+
+    public float attackSpeed = 1f;
+    private float shootCountdown = 0f;
     public float range = 12f; //3 Tiles
+    public bool targetfarthest = false;
     public float rotationSpeed = 15f;
-    public string enemyTag = "Enemy";
+    public float bulletSpeed = 50f;
+    public float damage = 50f;
 
+    [Header("Unity Stuff")]
+
+    public string enemyTag = "Enemy";
     public Transform partToRotate;
+    public GameObject bulletPrefab;
+    public Transform bulletStartPoint;
+
 
 
     // Start is called before the first frame update
@@ -30,6 +41,26 @@ public class Turret : MonoBehaviour
         if (target == null)
             return;
         UpdateRotation();
+        if (shootCountdown <= 0f)
+        {
+            Shoot();
+            shootCountdown = 1f / attackSpeed;
+        }
+
+        shootCountdown -= Time.deltaTime;
+    }
+    
+
+
+
+    void Shoot()
+    {
+        GameObject bullet = (GameObject)Instantiate(bulletPrefab, bulletStartPoint.position, bulletStartPoint.rotation);
+        Bullet bulletScript = bullet.GetComponent<Bullet>();
+        if (bullet != null)
+        {
+            bulletScript.Prepare(target, bulletSpeed, damage);
+        }
     }
 
     //drawing the range from the turret if selected to adjust it better

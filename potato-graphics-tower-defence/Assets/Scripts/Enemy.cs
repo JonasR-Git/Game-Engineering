@@ -66,7 +66,10 @@ public class Enemy : MonoBehaviour
     }
     public void ReachedEnd()
     {
-        Died();
+        isAlive = false;
+        player.ChangeLive();
+        WaveSpawner.AliveCounter--;
+        Destroy(gameObject);
     }
 
 

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 3440
     height: 1357
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Test Runner
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 148
+  controlID: 64
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,12 +139,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1843
+    width: 1875
     height: 1307
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 42
+  controlID: 128
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,12 +165,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1843
+    width: 1875
     height: 998
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 43
+  controlID: 129
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -188,7 +188,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 270
+    width: 274
     height: 998
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -212,9 +212,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 270
+    x: 274
     y: 0
-    width: 457
+    width: 463
     height: 998
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -238,9 +238,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 727
+    x: 737
     y: 0
-    width: 1116
+    width: 1138
     height: 998
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -266,7 +266,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 998
-    width: 1843
+    width: 1875
     height: 309
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
@@ -293,14 +293,14 @@ MonoBehaviour:
   - {fileID: 14}
   m_Position:
     serializedVersion: 2
-    x: 1843
+    x: 1875
     y: 0
-    width: 1597
+    width: 1565
     height: 1307
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 149
+  controlID: 65
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -318,10 +318,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1597
+    width: 1565
     height: 687
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -344,10 +344,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 687
-    width: 1597
+    width: 1565
     height: 620
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -373,9 +373,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 727
+    x: 737
     y: 73
-    width: 1114
+    width: 1136
     height: 977
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -389,7 +389,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1114, y: 956}
+  m_TargetSize: {x: 1136, y: 956}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -404,8 +404,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -557
-    m_HBaseRangeMax: 557
+    m_HBaseRangeMin: -568
+    m_HBaseRangeMax: 568
     m_VBaseRangeMin: -478
     m_VBaseRangeMax: 478
     m_HAllowExceedBaseRangeMin: 1
@@ -425,23 +425,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1114
+      width: 1136
       height: 956
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 557, y: 478}
+    m_Translation: {x: 568, y: 478}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -557
+      x: -568
       y: -478
-      width: 1114
+      width: 1136
       height: 956
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1114, y: 977}
+  m_LastWindowPixelSize: {x: 1136, y: 977}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -469,7 +469,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 269
+    width: 273
     height: 977
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -478,9 +478,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: c4d2ffff0ed3ffffacd4ffff4cddffff96ddffff56e4ffff34eeffff7eeeffff18f0fffffef9ffff2cfbffff0e5f0000
+      m_SelectedIDs: d69a0000
+      m_LastClickedID: 39638
+      m_ExpandedIDs: 08cfffff52cffffff0d0ffff8edaffffd8daffff76dcffff14e5ffff5ee5ffffe8e6ffffc4eeffff0eefffff9ef0ffff2cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -524,9 +524,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 270
+    x: 274
     y: 73
-    width: 455
+    width: 461
     height: 977
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -887,7 +887,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 60}
     m_SelectedIDs: e25f0000
     m_LastClickedID: 24546
-    m_ExpandedIDs: 00000000ce5f0000d05f0000d25f0000d45f0000d65f0000d85f000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000de630000e0630000e2630000e4630000e6630000e8630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -915,7 +915,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ce5f0000d05f0000d25f0000d45f0000d65f0000d85f0000
+    m_ExpandedIDs: 00000000de630000e0630000e2630000e4630000e6630000e8630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -993,7 +993,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 1071
-    width: 1842
+    width: 1874
     height: 288
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1019,9 +1019,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1843
+    x: 1875
     y: 73
-    width: 1596
+    width: 1564
     height: 666
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1060,16 +1060,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1843
-    y: 760
-    width: 1596
+    x: -30125
+    y: -31283
+    width: 1564
     height: 599
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 154
+    ID: 150
     splitterInitialOffset: 158
     currentActiveSplitter: -1
     realSizes:
@@ -1101,7 +1101,7 @@ MonoBehaviour:
       name: potato-graphics-tower-defence
       fullName: potato-graphics-tower-defence
       resultStatus: 2
-      duration: 0.1278146
+      duration: 0.1269487
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1117,174 +1117,9 @@ MonoBehaviour:
       name: PlayMode.dll
       fullName: D:/Praktikum_CG/PGTD_Git/Game-Engineering/potato-graphics-tower-defence/Library/ScriptAssemblies/PlayMode.dll
       resultStatus: 2
-      duration: 0.0270162
+      duration: 0.0362457
       messages: One or more child tests had errors
-      output: 'Allocation of 16 bytes at 0000025480D83A10
-
-        Allocation of
-        16 bytes at 0000025480D839F0
-
-        Allocation of 16 bytes at 0000025480D839D0
-
-        Allocation
-        of 16 bytes at 0000025480D839B0
-
-        Allocation of 16 bytes at 0000025480D83990
-
-        Allocation
-        of 16 bytes at 0000025480D83970
-
-        Allocation of 16 bytes at 0000025480D83950
-
-        Allocation
-        of 16 bytes at 0000025480D83930
-
-        Allocation of 16 bytes at 0000025480D83910
-
-        Allocation
-        of 16 bytes at 0000025480D838F0
-
-        Allocation of 16 bytes at 0000025480D838D0
-
-        Allocation
-        of 16 bytes at 0000025480D838B0
-
-        Allocation of 16 bytes at 0000025480D83890
-
-        Allocation
-        of 16 bytes at 0000025480D83870
-
-        Allocation of 16 bytes at 0000025480D83850
-
-        Allocation
-        of 16 bytes at 0000025480D83830
-
-        Allocation of 16 bytes at 0000025480D83810
-
-        Allocation
-        of 16 bytes at 0000025480D837F0
-
-        Allocation of 16 bytes at 0000025480D837D0
-
-        Allocation
-        of 16 bytes at 0000025480D837B0
-
-        Allocation of 16 bytes at 0000025480D83790
-
-        Allocation
-        of 16 bytes at 0000025480D83770
-
-        Allocation of 16 bytes at 0000025480D83750
-
-        Allocation
-        of 16 bytes at 0000025480D83730
-
-        Allocation of 16 bytes at 0000025480D83710
-
-        Allocation
-        of 16 bytes at 0000025480D836F0
-
-        Allocation of 16 bytes at 0000025480D836D0
-
-        Allocation
-        of 16 bytes at 0000025480D836B0
-
-        Allocation of 16 bytes at 0000025480D83690
-
-        Allocation
-        of 16 bytes at 0000025480D83670
-
-        Allocation of 16 bytes at 0000025480D83650
-
-        TLS
-        Allocator ALLOC_TEMP_TLS, underlying allocator ALLOC_TEMP_MAIN has unfreed
-        allocations, size 496
-
-        Internal: Stack allocator ALLOC_TEMP_MAIN
-        has unfreed allocations, size 496
-
-        To Debug, enable the define:
-        DEBUG_STACK_LEAK in StackAllocator.h. This will output the callstacks of
-        the leaked allocations
-
-        Allocation of 16 bytes at 0000025480D83A10
-
-        Allocation
-        of 16 bytes at 0000025480D839F0
-
-        Allocation of 16 bytes at 0000025480D839D0
-
-        Allocation
-        of 16 bytes at 0000025480D839B0
-
-        Allocation of 16 bytes at 0000025480D83990
-
-        Allocation
-        of 16 bytes at 0000025480D83970
-
-        Allocation of 16 bytes at 0000025480D83950
-
-        Allocation
-        of 16 bytes at 0000025480D83930
-
-        Allocation of 16 bytes at 0000025480D83910
-
-        Allocation
-        of 16 bytes at 0000025480D838F0
-
-        Allocation of 16 bytes at 0000025480D838D0
-
-        Allocation
-        of 16 bytes at 0000025480D838B0
-
-        Allocation of 16 bytes at 0000025480D83890
-
-        Allocation
-        of 16 bytes at 0000025480D83870
-
-        Allocation of 16 bytes at 0000025480D83850
-
-        Allocation
-        of 16 bytes at 0000025480D83830
-
-        Allocation of 16 bytes at 0000025480D83810
-
-        Allocation
-        of 16 bytes at 0000025480D837F0
-
-        Allocation of 16 bytes at 0000025480D837D0
-
-        Allocation
-        of 16 bytes at 0000025480D837B0
-
-        Allocation of 16 bytes at 0000025480D83790
-
-        Allocation
-        of 16 bytes at 0000025480D83770
-
-        Allocation of 16 bytes at 0000025480D83750
-
-        Allocation
-        of 16 bytes at 0000025480D83730
-
-        Allocation of 16 bytes at 0000025480D83710
-
-        Allocation
-        of 16 bytes at 0000025480D836F0
-
-        Allocation of 16 bytes at 0000025480D836D0
-
-        Allocation
-        of 16 bytes at 0000025480D836B0
-
-        Allocation of 16 bytes at 0000025480D83690
-
-        Allocation
-        of 16 bytes at 0000025480D83670
-
-        Allocation of 16 bytes at 0000025480D83650
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1298,174 +1133,9 @@ MonoBehaviour:
       name: PlayerTests
       fullName: PlayerTests
       resultStatus: 2
-      duration: 0.0202503
+      duration: 0.0309036
       messages: One or more child tests had errors
-      output: 'Allocation of 16 bytes at 0000025480D83A10
-
-        Allocation of
-        16 bytes at 0000025480D839F0
-
-        Allocation of 16 bytes at 0000025480D839D0
-
-        Allocation
-        of 16 bytes at 0000025480D839B0
-
-        Allocation of 16 bytes at 0000025480D83990
-
-        Allocation
-        of 16 bytes at 0000025480D83970
-
-        Allocation of 16 bytes at 0000025480D83950
-
-        Allocation
-        of 16 bytes at 0000025480D83930
-
-        Allocation of 16 bytes at 0000025480D83910
-
-        Allocation
-        of 16 bytes at 0000025480D838F0
-
-        Allocation of 16 bytes at 0000025480D838D0
-
-        Allocation
-        of 16 bytes at 0000025480D838B0
-
-        Allocation of 16 bytes at 0000025480D83890
-
-        Allocation
-        of 16 bytes at 0000025480D83870
-
-        Allocation of 16 bytes at 0000025480D83850
-
-        Allocation
-        of 16 bytes at 0000025480D83830
-
-        Allocation of 16 bytes at 0000025480D83810
-
-        Allocation
-        of 16 bytes at 0000025480D837F0
-
-        Allocation of 16 bytes at 0000025480D837D0
-
-        Allocation
-        of 16 bytes at 0000025480D837B0
-
-        Allocation of 16 bytes at 0000025480D83790
-
-        Allocation
-        of 16 bytes at 0000025480D83770
-
-        Allocation of 16 bytes at 0000025480D83750
-
-        Allocation
-        of 16 bytes at 0000025480D83730
-
-        Allocation of 16 bytes at 0000025480D83710
-
-        Allocation
-        of 16 bytes at 0000025480D836F0
-
-        Allocation of 16 bytes at 0000025480D836D0
-
-        Allocation
-        of 16 bytes at 0000025480D836B0
-
-        Allocation of 16 bytes at 0000025480D83690
-
-        Allocation
-        of 16 bytes at 0000025480D83670
-
-        Allocation of 16 bytes at 0000025480D83650
-
-        TLS
-        Allocator ALLOC_TEMP_TLS, underlying allocator ALLOC_TEMP_MAIN has unfreed
-        allocations, size 496
-
-        Internal: Stack allocator ALLOC_TEMP_MAIN
-        has unfreed allocations, size 496
-
-        To Debug, enable the define:
-        DEBUG_STACK_LEAK in StackAllocator.h. This will output the callstacks of
-        the leaked allocations
-
-        Allocation of 16 bytes at 0000025480D83A10
-
-        Allocation
-        of 16 bytes at 0000025480D839F0
-
-        Allocation of 16 bytes at 0000025480D839D0
-
-        Allocation
-        of 16 bytes at 0000025480D839B0
-
-        Allocation of 16 bytes at 0000025480D83990
-
-        Allocation
-        of 16 bytes at 0000025480D83970
-
-        Allocation of 16 bytes at 0000025480D83950
-
-        Allocation
-        of 16 bytes at 0000025480D83930
-
-        Allocation of 16 bytes at 0000025480D83910
-
-        Allocation
-        of 16 bytes at 0000025480D838F0
-
-        Allocation of 16 bytes at 0000025480D838D0
-
-        Allocation
-        of 16 bytes at 0000025480D838B0
-
-        Allocation of 16 bytes at 0000025480D83890
-
-        Allocation
-        of 16 bytes at 0000025480D83870
-
-        Allocation of 16 bytes at 0000025480D83850
-
-        Allocation
-        of 16 bytes at 0000025480D83830
-
-        Allocation of 16 bytes at 0000025480D83810
-
-        Allocation
-        of 16 bytes at 0000025480D837F0
-
-        Allocation of 16 bytes at 0000025480D837D0
-
-        Allocation
-        of 16 bytes at 0000025480D837B0
-
-        Allocation of 16 bytes at 0000025480D83790
-
-        Allocation
-        of 16 bytes at 0000025480D83770
-
-        Allocation of 16 bytes at 0000025480D83750
-
-        Allocation
-        of 16 bytes at 0000025480D83730
-
-        Allocation of 16 bytes at 0000025480D83710
-
-        Allocation
-        of 16 bytes at 0000025480D836F0
-
-        Allocation of 16 bytes at 0000025480D836D0
-
-        Allocation
-        of 16 bytes at 0000025480D836B0
-
-        Allocation of 16 bytes at 0000025480D83690
-
-        Allocation
-        of 16 bytes at 0000025480D83670
-
-        Allocation of 16 bytes at 0000025480D83650
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1498,177 +1168,21 @@ MonoBehaviour:
       name: MonoBehaviourTest
       fullName: PlayerTests.MonoBehaviourTest
       resultStatus: 2
-      duration: 0.0088739
-      messages: 'Unhandled log message: ''[Assert] TLS Allocator ALLOC_TEMP_TLS,
-        underlying allocator ALLOC_TEMP_MAIN has unfreed allocations, size 496''.
-        Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'Allocation of 16 bytes at 0000025480D83A10
+      duration: 0.0215388
+      messages: "  Expected: not equal to 0\r\n  But was:  0\r\n"
+      output: '0
 
-        Allocation of
-        16 bytes at 0000025480D839F0
+        0
 
-        Allocation of 16 bytes at 0000025480D839D0
-
-        Allocation
-        of 16 bytes at 0000025480D839B0
-
-        Allocation of 16 bytes at 0000025480D83990
-
-        Allocation
-        of 16 bytes at 0000025480D83970
-
-        Allocation of 16 bytes at 0000025480D83950
-
-        Allocation
-        of 16 bytes at 0000025480D83930
-
-        Allocation of 16 bytes at 0000025480D83910
-
-        Allocation
-        of 16 bytes at 0000025480D838F0
-
-        Allocation of 16 bytes at 0000025480D838D0
-
-        Allocation
-        of 16 bytes at 0000025480D838B0
-
-        Allocation of 16 bytes at 0000025480D83890
-
-        Allocation
-        of 16 bytes at 0000025480D83870
-
-        Allocation of 16 bytes at 0000025480D83850
-
-        Allocation
-        of 16 bytes at 0000025480D83830
-
-        Allocation of 16 bytes at 0000025480D83810
-
-        Allocation
-        of 16 bytes at 0000025480D837F0
-
-        Allocation of 16 bytes at 0000025480D837D0
-
-        Allocation
-        of 16 bytes at 0000025480D837B0
-
-        Allocation of 16 bytes at 0000025480D83790
-
-        Allocation
-        of 16 bytes at 0000025480D83770
-
-        Allocation of 16 bytes at 0000025480D83750
-
-        Allocation
-        of 16 bytes at 0000025480D83730
-
-        Allocation of 16 bytes at 0000025480D83710
-
-        Allocation
-        of 16 bytes at 0000025480D836F0
-
-        Allocation of 16 bytes at 0000025480D836D0
-
-        Allocation
-        of 16 bytes at 0000025480D836B0
-
-        Allocation of 16 bytes at 0000025480D83690
-
-        Allocation
-        of 16 bytes at 0000025480D83670
-
-        Allocation of 16 bytes at 0000025480D83650
-
-        TLS
-        Allocator ALLOC_TEMP_TLS, underlying allocator ALLOC_TEMP_MAIN has unfreed
-        allocations, size 496
-
-        Internal: Stack allocator ALLOC_TEMP_MAIN
-        has unfreed allocations, size 496
-
-        To Debug, enable the define:
-        DEBUG_STACK_LEAK in StackAllocator.h. This will output the callstacks of
-        the leaked allocations
-
-        Allocation of 16 bytes at 0000025480D83A10
-
-        Allocation
-        of 16 bytes at 0000025480D839F0
-
-        Allocation of 16 bytes at 0000025480D839D0
-
-        Allocation
-        of 16 bytes at 0000025480D839B0
-
-        Allocation of 16 bytes at 0000025480D83990
-
-        Allocation
-        of 16 bytes at 0000025480D83970
-
-        Allocation of 16 bytes at 0000025480D83950
-
-        Allocation
-        of 16 bytes at 0000025480D83930
-
-        Allocation of 16 bytes at 0000025480D83910
-
-        Allocation
-        of 16 bytes at 0000025480D838F0
-
-        Allocation of 16 bytes at 0000025480D838D0
-
-        Allocation
-        of 16 bytes at 0000025480D838B0
-
-        Allocation of 16 bytes at 0000025480D83890
-
-        Allocation
-        of 16 bytes at 0000025480D83870
-
-        Allocation of 16 bytes at 0000025480D83850
-
-        Allocation
-        of 16 bytes at 0000025480D83830
-
-        Allocation of 16 bytes at 0000025480D83810
-
-        Allocation
-        of 16 bytes at 0000025480D837F0
-
-        Allocation of 16 bytes at 0000025480D837D0
-
-        Allocation
-        of 16 bytes at 0000025480D837B0
-
-        Allocation of 16 bytes at 0000025480D83790
-
-        Allocation
-        of 16 bytes at 0000025480D83770
-
-        Allocation of 16 bytes at 0000025480D83750
-
-        Allocation
-        of 16 bytes at 0000025480D83730
-
-        Allocation of 16 bytes at 0000025480D83710
-
-        Allocation
-        of 16 bytes at 0000025480D836F0
-
-        Allocation of 16 bytes at 0000025480D836D0
-
-        Allocation
-        of 16 bytes at 0000025480D836B0
-
-        Allocation of 16 bytes at 0000025480D83690
-
-        Allocation
-        of 16 bytes at 0000025480D83670
-
-        Allocation of 16 bytes at 0000025480D83650
+        0
 
 '
-      stacktrace: '
+      stacktrace: 'at PlayerTests+<MonoBehaviourTest>d__2.MoveNext () [0x00067] in
+        D:\Praktikum_CG\PGTD_Git\Game-Engineering\potato-graphics-tower-defence\Assets\Editor\Tests\PlayMode\PlayerTests.cs:54
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
+        in D:\Praktikum_CG\PGTD_Git\Game-Engineering\potato-graphics-tower-defence\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
 
 '
       notRunnable: 0
@@ -1847,191 +1361,16 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: PlayMode.dll/[PlayMode][TestEnemy][suite]
-    m_ResultText: 'MonoBehaviourTest (0,009s)
+    m_ResultText: 'EnemyGettingFaster (2,008s)
 
       ---
 
-      Unhandled log message:
-      ''[Assert] TLS Allocator ALLOC_TEMP_TLS, underlying allocator ALLOC_TEMP_MAIN
-      has unfreed allocations, size 496''. Use UnityEngine.TestTools.LogAssert.Expect
-
-      ---
-
-
-      ---
-
-      Allocation
-      of 16 bytes at 0000025480D83A10
-
-      Allocation of 16 bytes at 0000025480D839F0
-
-      Allocation
-      of 16 bytes at 0000025480D839D0
-
-      Allocation of 16 bytes at 0000025480D839B0
-
-      Allocation
-      of 16 bytes at 0000025480D83990
-
-      Allocation of 16 bytes at 0000025480D83970
-
-      Allocation
-      of 16 bytes at 0000025480D83950
-
-      Allocation of 16 bytes at 0000025480D83930
-
-      Allocation
-      of 16 bytes at 0000025480D83910
-
-      Allocation of 16 bytes at 0000025480D838F0
-
-      Allocation
-      of 16 bytes at 0000025480D838D0
-
-      Allocation of 16 bytes at 0000025480D838B0
-
-      Allocation
-      of 16 bytes at 0000025480D83890
-
-      Allocation of 16 bytes at 0000025480D83870
-
-      Allocation
-      of 16 bytes at 0000025480D83850
-
-      Allocation of 16 bytes at 0000025480D83830
-
-      Allocation
-      of 16 bytes at 0000025480D83810
-
-      Allocation of 16 bytes at 0000025480D837F0
-
-      Allocation
-      of 16 bytes at 0000025480D837D0
-
-      Allocation of 16 bytes at 0000025480D837B0
-
-      Allocation
-      of 16 bytes at 0000025480D83790
-
-      Allocation of 16 bytes at 0000025480D83770
-
-      Allocation
-      of 16 bytes at 0000025480D83750
-
-      Allocation of 16 bytes at 0000025480D83730
-
-      Allocation
-      of 16 bytes at 0000025480D83710
-
-      Allocation of 16 bytes at 0000025480D836F0
-
-      Allocation
-      of 16 bytes at 0000025480D836D0
-
-      Allocation of 16 bytes at 0000025480D836B0
-
-      Allocation
-      of 16 bytes at 0000025480D83690
-
-      Allocation of 16 bytes at 0000025480D83670
-
-      Allocation
-      of 16 bytes at 0000025480D83650
-
-      TLS Allocator ALLOC_TEMP_TLS, underlying
-      allocator ALLOC_TEMP_MAIN has unfreed allocations, size 496
-
-      Internal:
-      Stack allocator ALLOC_TEMP_MAIN has unfreed allocations, size 496
-
-      To
-      Debug, enable the define: DEBUG_STACK_LEAK in StackAllocator.h. This will output
-      the callstacks of the leaked allocations
-
-      Allocation of 16 bytes at
-      0000025480D83A10
-
-      Allocation of 16 bytes at 0000025480D839F0
-
-      Allocation
-      of 16 bytes at 0000025480D839D0
-
-      Allocation of 16 bytes at 0000025480D839B0
-
-      Allocation
-      of 16 bytes at 0000025480D83990
-
-      Allocation of 16 bytes at 0000025480D83970
-
-      Allocation
-      of 16 bytes at 0000025480D83950
-
-      Allocation of 16 bytes at 0000025480D83930
-
-      Allocation
-      of 16 bytes at 0000025480D83910
-
-      Allocation of 16 bytes at 0000025480D838F0
-
-      Allocation
-      of 16 bytes at 0000025480D838D0
-
-      Allocation of 16 bytes at 0000025480D838B0
-
-      Allocation
-      of 16 bytes at 0000025480D83890
-
-      Allocation of 16 bytes at 0000025480D83870
-
-      Allocation
-      of 16 bytes at 0000025480D83850
-
-      Allocation of 16 bytes at 0000025480D83830
-
-      Allocation
-      of 16 bytes at 0000025480D83810
-
-      Allocation of 16 bytes at 0000025480D837F0
-
-      Allocation
-      of 16 bytes at 0000025480D837D0
-
-      Allocation of 16 bytes at 0000025480D837B0
-
-      Allocation
-      of 16 bytes at 0000025480D83790
-
-      Allocation of 16 bytes at 0000025480D83770
-
-      Allocation
-      of 16 bytes at 0000025480D83750
-
-      Allocation of 16 bytes at 0000025480D83730
-
-      Allocation
-      of 16 bytes at 0000025480D83710
-
-      Allocation of 16 bytes at 0000025480D836F0
-
-      Allocation
-      of 16 bytes at 0000025480D836D0
-
-      Allocation of 16 bytes at 0000025480D836B0
-
-      Allocation
-      of 16 bytes at 0000025480D83690
-
-      Allocation of 16 bytes at 0000025480D83670
-
-      Allocation
-      of 16 bytes at 0000025480D83650'
-    m_ResultStacktrace: '
-
-'
+      Last Wave Spawned'
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 721132e7
-      m_LastClickedID: -416149134
+      m_SelectedIDs: 2b484e10
+      m_LastClickedID: 273565739
       m_ExpandedIDs: efa62f809d86bcc750bff5c715cb83ee944314f0b45b4210ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
