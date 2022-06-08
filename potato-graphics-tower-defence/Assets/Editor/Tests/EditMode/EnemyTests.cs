@@ -7,13 +7,13 @@ using UnityEngine.TestRunner;
 public class EnemyTests
 {
     [Test]
-    public void TestMovingDirectionStart()
+    public void TestIncreaseMoneyUponEnemyKilled()
     {
         GameObject gameObj1 = new GameObject();
-        WaveSpawner waveSpawner = gameObj1.AddComponent<WaveSpawner>();
+        GameObject gameObj2 = new GameObject();
+        Enemy enemy = gameObj2.AddComponent<Enemy>();
         PlayerStats player = gameObj1.AddComponent<PlayerStats>();
-        Enemy enemy = gameObj1.AddComponent<Enemy>();
-
+        enemy.setPlayer(player);
         var moneyStart = player.getMoney();
 
         enemy.TakeDamage(enemy.getHealth());

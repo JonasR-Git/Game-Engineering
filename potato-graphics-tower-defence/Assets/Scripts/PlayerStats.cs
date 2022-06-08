@@ -13,7 +13,7 @@ public class PlayerStats : MonoBehaviour
     public  int startLives = 30;
     public Text livesText;
     public Text moneyText;
-    void Awake()
+    void Start()
     {
         money = startMoney;
         lives = startLives;

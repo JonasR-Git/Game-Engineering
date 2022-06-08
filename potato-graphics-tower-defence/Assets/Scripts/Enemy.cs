@@ -57,12 +57,20 @@ public class Enemy : MonoBehaviour
         speed = startSpeed;
     }
 
-    void Died()
+    public void Died()
     {
         isAlive = false;
+        player.getMoney();
         player.ChangeMoney(bounty);
         WaveSpawner.AliveCounter--;
-        Destroy(gameObject);
+        if (Application.isPlaying)
+        {
+            Destroy(gameObject);
+        }
+       else
+        {
+            DestroyImmediate(gameObject);
+        }
     }
     public void ReachedEnd()
     {
@@ -85,5 +93,13 @@ public class Enemy : MonoBehaviour
     public float getStartHealth()
     {
         return startHealth;
+    }
+    public PlayerStats getPlayer()
+    {
+        return player;
+    }
+    public void setPlayer(PlayerStats _player)
+    {
+        player = _player;
     }
 }
