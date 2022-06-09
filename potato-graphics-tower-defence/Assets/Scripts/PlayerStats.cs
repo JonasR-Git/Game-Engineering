@@ -43,6 +43,10 @@ public class PlayerStats : MonoBehaviour
     {
         return money;
     }
+    public int getLives()
+    {
+        return lives;
+    }
 
     public int getStartMoney()
     {
