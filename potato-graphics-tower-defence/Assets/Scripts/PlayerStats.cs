@@ -13,6 +13,21 @@ public class PlayerStats : MonoBehaviour
     public  int startLives = 30;
     public Text livesText;
     public Text moneyText;
+
+    //Creating a Singleton Pattern Style to have only 1 Player in every Scene
+    public static PlayerStats instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.Log("Only one Player should be instanciate");
+            return;
+        }
+        instance = this;
+    }
+
+
     void Start()
     {
         money = startMoney;

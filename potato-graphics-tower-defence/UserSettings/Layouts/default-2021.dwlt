@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 3440
     height: 1357
   m_ShowMode: 4
-  m_Title: Test Runner
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 64
+  controlID: 63
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,12 +139,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1875
+    width: 2268
     height: 1307
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 128
+  controlID: 64
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,12 +165,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1875
+    width: 2268
     height: 998
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 129
+  controlID: 65
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -188,7 +188,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 274
+    width: 326
     height: 998
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -212,9 +212,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 274
+    x: 326
     y: 0
-    width: 463
+    width: 884
     height: 998
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -238,12 +238,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 737
+    x: 1210
     y: 0
-    width: 1138
+    width: 1058
     height: 998
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -259,23 +259,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 998
-    width: 1875
+    width: 2268
     height: 309
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 19}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -293,14 +293,14 @@ MonoBehaviour:
   - {fileID: 14}
   m_Position:
     serializedVersion: 2
-    x: 1875
+    x: 2268
     y: 0
-    width: 1565
+    width: 1172
     height: 1307
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 65
+  controlID: 140
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -318,8 +318,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1565
-    height: 687
+    width: 1172
+    height: 955
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
@@ -343,11 +343,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 687
-    width: 1565
-    height: 620
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+    y: 955
+    width: 1172
+    height: 352
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -373,9 +373,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 737
+    x: 1210
     y: 73
-    width: 1136
+    width: 1056
     height: 977
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -389,7 +389,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1136, y: 956}
+  m_TargetSize: {x: 1056, y: 956}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -404,8 +404,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -568
-    m_HBaseRangeMax: 568
+    m_HBaseRangeMin: -528
+    m_HBaseRangeMax: 528
     m_VBaseRangeMin: -478
     m_VBaseRangeMax: 478
     m_HAllowExceedBaseRangeMin: 1
@@ -425,23 +425,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1136
+      width: 1056
       height: 956
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 568, y: 478}
+    m_Translation: {x: 528, y: 478}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -568
+      x: -528
       y: -478
-      width: 1136
+      width: 1056
       height: 956
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1136, y: 977}
+  m_LastWindowPixelSize: {x: 1056, y: 977}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -469,7 +469,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 273
+    width: 325
     height: 977
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -478,9 +478,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d69a0000
-      m_LastClickedID: 39638
-      m_ExpandedIDs: 08cfffff52cffffff0d0ffff8edaffffd8daffff76dcffff14e5ffff5ee5ffffe8e6ffffc4eeffff0eefffff9ef0ffff2cfbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: e280ffff3881ffff5c8dffff749cffffa8ccffff86ebfffff2faffff4a5f0000cc5f00004061000044630000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -524,9 +524,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 274
+    x: 326
     y: 73
-    width: 461
+    width: 882
     height: 977
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -742,7 +742,7 @@ MonoBehaviour:
       index: 10
       layout: 4
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
-  m_Gizmos: 1
+  m_Gizmos: 0
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 0
   m_SceneLighting: 1
@@ -751,9 +751,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 83.844734, y: 272.67026, z: 5.055567}
+    m_Target: {x: 729.03394, y: 241.56476, z: -0.5995419}
     speed: 2
-    m_Value: {x: 83.844734, y: 272.67026, z: 5.055567}
+    m_Value: {x: 729.03394, y: 241.56476, z: -0.5995419}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -804,9 +804,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 539.08636
+    m_Target: 1078.1022
     speed: 2
-    m_Value: 539.08636
+    m_Value: 1078.1022
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -824,8 +824,8 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
-  m_LastSceneViewOrtho: 0
+  m_LastSceneViewRotation: {x: 0.05837666, y: -0.77432984, z: 0.07222295, w: 0.62591}
+  m_LastSceneViewOrtho: 1
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_SceneVisActive: 1
@@ -853,7 +853,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 1071
-    width: 2873
+    width: 2267
     height: 288
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -872,22 +872,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Enemies/BaseEnemy
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Enemies/BaseEnemy
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Praktikum_CG\PGTD_Git\Game-Engineering\potato-graphics-tower-defence
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: e25f0000
-    m_LastClickedID: 24546
-    m_ExpandedIDs: 00000000de630000e0630000e2630000e4630000e6630000e8630000
+    scrollPos: {x: 0, y: 284}
+    m_SelectedIDs: 8a640000
+    m_LastClickedID: 25738
+    m_ExpandedIDs: 000000004464000046640000486400004a6400004c6400004e6400005064000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -915,7 +915,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000de630000e0630000e2630000e4630000e6630000e8630000
+    m_ExpandedIDs: 000000004464000046640000486400004a6400004c6400004e64000050640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -940,10 +940,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 04650000
-    m_LastClickedInstanceID: 25860
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c623000000000000006f0000186f00000270000030740000
+    m_ExpandedInstanceIDs: c6230000006f0000186f0000027000003074000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -959,7 +959,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -993,7 +993,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 1071
-    width: 1874
+    width: 2267
     height: 288
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1019,10 +1019,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1875
+    x: 2268
     y: 73
-    width: 1564
-    height: 666
+    width: 1171
+    height: 934
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1060,21 +1060,21 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -30125
-    y: -31283
-    width: 1564
-    height: 599
+    x: 2268
+    y: 1028
+    width: 1171
+    height: 331
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 150
+    ID: 166
     splitterInitialOffset: 158
     currentActiveSplitter: -1
     realSizes:
-    - 240
-    - 289
+    - 119
+    - 142
     relativeSizes:
     - 0.45454547
     - 0.5454545
@@ -1084,7 +1084,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 529
+    lastTotalSize: 261
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -1092,7 +1092,7 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 0
+  m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
     m_Window: {fileID: 21}
     m_NewResultList:
@@ -1100,9 +1100,9 @@ MonoBehaviour:
       uniqueId: '[potato-graphics-tower-defence][suite]'
       name: potato-graphics-tower-defence
       fullName: potato-graphics-tower-defence
-      resultStatus: 2
-      duration: 0.1269487
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 13.537545
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1116,9 +1116,9 @@ MonoBehaviour:
       uniqueId: '[PlayMode][D:/Praktikum_CG/PGTD_Git/Game-Engineering/potato-graphics-tower-defence/Library/ScriptAssemblies/PlayMode.dll][suite]'
       name: PlayMode.dll
       fullName: D:/Praktikum_CG/PGTD_Git/Game-Engineering/potato-graphics-tower-defence/Library/ScriptAssemblies/PlayMode.dll
-      resultStatus: 2
-      duration: 0.0362457
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 13.449134
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1132,9 +1132,9 @@ MonoBehaviour:
       uniqueId: PlayMode.dll/[PlayMode][PlayerTests][suite]
       name: PlayerTests
       fullName: PlayerTests
-      resultStatus: 2
-      duration: 0.0309036
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 1.0342216
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1149,7 +1149,7 @@ MonoBehaviour:
       name: AddMoneyIfEnemyDies
       fullName: PlayerTests.AddMoneyIfEnemyDies
       resultStatus: 1
-      duration: 8.018076
+      duration: 1.0221189
       messages: 
       output: 'Last Wave Spawned
 
@@ -1163,42 +1163,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: PlayMode.dll/[PlayMode][PlayerTests][suite]
-    - id: 1003
-      uniqueId: PlayMode.dll/PlayerTests/[PlayMode][PlayerTests.MonoBehaviourTest]
-      name: MonoBehaviourTest
-      fullName: PlayerTests.MonoBehaviourTest
-      resultStatus: 2
-      duration: 0.0215388
-      messages: "  Expected: not equal to 0\r\n  But was:  0\r\n"
-      output: '0
-
-        0
-
-        0
-
-'
-      stacktrace: 'at PlayerTests+<MonoBehaviourTest>d__2.MoveNext () [0x00067] in
-        D:\Praktikum_CG\PGTD_Git\Game-Engineering\potato-graphics-tower-defence\Assets\Editor\Tests\PlayMode\PlayerTests.cs:54
-
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
-        in D:\Praktikum_CG\PGTD_Git\Game-Engineering\potato-graphics-tower-defence\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: PlayMode.dll/[PlayMode][PlayerTests][suite]
     - id: 1001
       uniqueId: PlayMode.dll/[PlayMode][TestEnemy][suite]
       name: TestEnemy
       fullName: TestEnemy
       resultStatus: 1
-      duration: 3.1353614
+      duration: 12.407252
       messages: 
       output: 
       stacktrace: 
@@ -1214,7 +1184,7 @@ MonoBehaviour:
       name: EnemyChangesDirection
       fullName: TestEnemy.EnemyChangesDirection
       resultStatus: 1
-      duration: 3.1252248
+      duration: 3.1164157
       messages: 
       output: 'Last Wave Spawned
 
@@ -1233,7 +1203,7 @@ MonoBehaviour:
       name: EnemyGettingFaster
       fullName: TestEnemy.EnemyGettingFaster
       resultStatus: 1
-      duration: 2.0083358
+      duration: 2.0175054
       messages: 
       output: 'Last Wave Spawned
 
@@ -1252,7 +1222,7 @@ MonoBehaviour:
       name: EnemyGettingNormalSpeed
       fullName: TestEnemy.EnemyGettingNormalSpeed
       resultStatus: 1
-      duration: 1.007134
+      duration: 1.0123802
       messages: 
       output: 'Last Wave Spawned
 
@@ -1271,7 +1241,7 @@ MonoBehaviour:
       name: EnemyGettingSlowed
       fullName: TestEnemy.EnemyGettingSlowed
       resultStatus: 1
-      duration: 2.0070045
+      duration: 2.0164795
       messages: 
       output: 'Last Wave Spawned
 
@@ -1290,7 +1260,7 @@ MonoBehaviour:
       name: EnemyMovesAfterGameStarts
       fullName: TestEnemy.EnemyMovesAfterGameStarts
       resultStatus: 1
-      duration: 1.2110671
+      duration: 1.2135175
       messages: 
       output: 'Last Wave Spawned
 
@@ -1309,7 +1279,7 @@ MonoBehaviour:
       name: EnemySpawnsInFirstWave
       fullName: TestEnemy.EnemySpawnsInFirstWave
       resultStatus: 1
-      duration: 1.006985
+      duration: 1.0079365
       messages: 
       output: 'Last Wave Spawned
 
@@ -1328,7 +1298,7 @@ MonoBehaviour:
       name: EnemyTakeDamageAliveAfter
       fullName: TestEnemy.EnemyTakeDamageAliveAfter
       resultStatus: 1
-      duration: 1.0061526
+      duration: 1.007598
       messages: 
       output: 'Last Wave Spawned
 
@@ -1347,7 +1317,7 @@ MonoBehaviour:
       name: EnemyTakeDamageDeadAfter
       fullName: TestEnemy.EnemyTakeDamageDeadAfter
       resultStatus: 1
-      duration: 1.0073912
+      duration: 1.0082716
       messages: 
       output: 'Last Wave Spawned
 
@@ -1361,16 +1331,16 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: PlayMode.dll/[PlayMode][TestEnemy][suite]
-    m_ResultText: 'EnemyGettingFaster (2,008s)
+    m_ResultText: 'EnemyChangesDirection (3,116s)
 
       ---
 
       Last Wave Spawned'
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2b484e10
-      m_LastClickedID: 273565739
+      scrollPos: {x: 0, y: 40}
+      m_SelectedIDs: ce137fb4
+      m_LastClickedID: -1266740274
       m_ExpandedIDs: efa62f809d86bcc750bff5c715cb83ee944314f0b45b4210ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1406,7 +1376,7 @@ MonoBehaviour:
       name: potato-graphics-tower-defence
       fullName: potato-graphics-tower-defence
       resultStatus: 2
-      duration: 0.0598011
+      duration: 0.0432641
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1421,9 +1391,9 @@ MonoBehaviour:
       uniqueId: '[Tests][D:/Praktikum_CG/PGTD_Git/Game-Engineering/potato-graphics-tower-defence/Library/ScriptAssemblies/Tests.dll][suite]'
       name: Tests.dll
       fullName: D:/Praktikum_CG/PGTD_Git/Game-Engineering/potato-graphics-tower-defence/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 2
-      duration: 0.0202533
-      messages: One or more child tests had errors
+      resultStatus: 0
+      duration: 0
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1433,13 +1403,13 @@ MonoBehaviour:
       categories: []
       parentId: 1000
       parentUniqueId: '[potato-graphics-tower-defence][suite]'
-    - id: 1003
+    - id: 1001
       uniqueId: Tests.dll/[Tests][EnemyTests][suite]
       name: EnemyTests
       fullName: EnemyTests
-      resultStatus: 2
-      duration: 0.0189799
-      messages: One or more child tests had errors
+      resultStatus: 0
+      duration: 0
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1447,38 +1417,31 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1007
+      parentId: 1005
       parentUniqueId: '[Tests][D:/Praktikum_CG/PGTD_Git/Game-Engineering/potato-graphics-tower-defence/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1004
-      uniqueId: Tests.dll/EnemyTests/[Tests][EnemyTests.TestMovingDirectionStart]
-      name: TestMovingDirectionStart
-      fullName: EnemyTests.TestMovingDirectionStart
-      resultStatus: 2
-      duration: 0.0075594
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+    - id: 1002
+      uniqueId: Tests.dll/EnemyTests/[Tests][EnemyTests.TestIncreaseMoneyUponEnemyKilled]
+      name: TestIncreaseMoneyUponEnemyKilled
+      fullName: EnemyTests.TestIncreaseMoneyUponEnemyKilled
+      resultStatus: 0
+      duration: 0
+      messages: 
       output: 
-      stacktrace: "  at Enemy.Died () [0x00007] in D:\\Praktikum_CG\\PGTD_Git\\Game-Engineering\\potato-graphics-tower-defence\\Assets\\Scripts\\Enemy.cs:63
-        \r\n  at Enemy.TakeDamage (System.Single damage) [0x00023] in D:\\Praktikum_CG\\PGTD_Git\\Game-Engineering\\potato-graphics-tower-defence\\Assets\\Scripts\\Enemy.cs:42
-        \r\n  at EnemyTests.TestMovingDirectionStart () [0x00025] in D:\\Praktikum_CG\\PGTD_Git\\Game-Engineering\\potato-graphics-tower-defence\\Assets\\Editor\\Tests\\EditMode\\EnemyTests.cs:20
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1003
+      parentId: 1001
       parentUniqueId: Tests.dll/[Tests][EnemyTests][suite]
     - id: 1003
       uniqueId: Tests.dll/[Tests][PathTests][suite]
       name: PathTests
       fullName: PathTests
-      resultStatus: 1
-      duration: 0.0052441
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -1493,8 +1456,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/PathTests/[Tests][PathTests.Waypoints_Map1_Test]
       name: Waypoints_Map1_Test
       fullName: PathTests.Waypoints_Map1_Test
-      resultStatus: 1
-      duration: 0.0003984
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -1506,18 +1469,18 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1003
       parentUniqueId: Tests.dll/[Tests][PathTests][suite]
-    m_ResultText: "TestMovingDirectionStart (0,008s)\n---\nSystem.NullReferenceException
+    m_ResultText: "TestMovingDirectionStart (0,007s)\n---\nSystem.NullReferenceException
       : Object reference not set to an instance of an object\n---\nat Enemy.Died
       () [0x00007] in D:\\Praktikum_CG\\PGTD_Git\\Game-Engineering\\potato-graphics-tower-defence\\Assets\\Scripts\\Enemy.cs:63
       \r\n  at Enemy.TakeDamage (System.Single damage) [0x00023] in D:\\Praktikum_CG\\PGTD_Git\\Game-Engineering\\potato-graphics-tower-defence\\Assets\\Scripts\\Enemy.cs:42
-      \r\n  at EnemyTests.TestMovingDirectionStart () [0x00025] in D:\\Praktikum_CG\\PGTD_Git\\Game-Engineering\\potato-graphics-tower-defence\\Assets\\Editor\\Tests\\EditMode\\EnemyTests.cs:20
+      \r\n  at EnemyTests.TestMovingDirectionStart () [0x0001f] in D:\\Praktikum_CG\\PGTD_Git\\Game-Engineering\\potato-graphics-tower-defence\\Assets\\Editor\\Tests\\EditMode\\EnemyTests.cs:19
       \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
       at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
       invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
       culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0"
     m_ResultStacktrace: "  at Enemy.Died () [0x00007] in D:\\Praktikum_CG\\PGTD_Git\\Game-Engineering\\potato-graphics-tower-defence\\Assets\\Scripts\\Enemy.cs:63
       \r\n  at Enemy.TakeDamage (System.Single damage) [0x00023] in D:\\Praktikum_CG\\PGTD_Git\\Game-Engineering\\potato-graphics-tower-defence\\Assets\\Scripts\\Enemy.cs:42
-      \r\n  at EnemyTests.TestMovingDirectionStart () [0x00025] in D:\\Praktikum_CG\\PGTD_Git\\Game-Engineering\\potato-graphics-tower-defence\\Assets\\Editor\\Tests\\EditMode\\EnemyTests.cs:20
+      \r\n  at EnemyTests.TestMovingDirectionStart () [0x0001f] in D:\\Praktikum_CG\\PGTD_Git\\Game-Engineering\\potato-graphics-tower-defence\\Assets\\Editor\\Tests\\EditMode\\EnemyTests.cs:19
       \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
       at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
       invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
