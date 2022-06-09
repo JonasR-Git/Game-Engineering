@@ -8,7 +8,7 @@ using UnityEngine.TestTools.Utils;
 using System;
 using UnityEditor;
 
-public class TestEnemy
+public class TestEnemyMovement
 {
 
     //These are tests for the combined enemy from EnemyMovement and Enemy
@@ -161,43 +161,5 @@ public class TestEnemy
 
         Assert.AreEqual(enemySpeedNormal, expectedSpeedNormal, "SlowTest failed. Enemy has the speed of " + enemySpeedNormal + " instead of " + expectedSpeedNormal * (1f - 0.1f) );
 
-    }
-    [UnityTest]
-    public IEnumerator EnemyTakeDamageAliveAfter()
-    {
-        SceneManager.LoadScene("Testscene");
-
-        //Wait for the first Wave (Enemy Spawning)
-        yield return new WaitForSecondsRealtime(timeTillFirstWave);
-
-        //Get an Enemy which is spawned
-        var enemy = GameObject.FindObjectOfType<Enemy>();
-
-        enemy.TakeDamage(enemy.getHealth() * 0.5f);
-
-        var currentHealth = enemy.getHealth();
-        var expectedHealth = enemy.getStartHealth() * 0.5f;
-
-        //yield return new WaitForSecondsRealtime(1);
-
-        Assert.AreEqual(currentHealth, expectedHealth, "TakeDamageTest failed, Enemy has " + currentHealth + "instead of " + expectedHealth);
-    }
-
-    [UnityTest]
-    public IEnumerator EnemyTakeDamageDeadAfter()
-    {
-        SceneManager.LoadScene("Testscene");
-
-        //Wait for the first Wave (Enemy Spawning)
-        yield return new WaitForSecondsRealtime(timeTillFirstWave);
-
-        //Get an Enemy which is spawned
-        var enemy = GameObject.FindObjectOfType<Enemy>();
-
-        enemy.TakeDamage(enemy.getHealth() + 1f);
-
-
-
-        Assert.IsNotNull(enemy);
     }
 }

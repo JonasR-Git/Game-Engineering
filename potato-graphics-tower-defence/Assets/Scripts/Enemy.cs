@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     private float startHealth = 100;
     private int bounty = 10;
     private PlayerStats player;
+    private WaveSpawner waveSpawner;
 
     [HideInInspector] //So you can't change it from the Inspector
     public float speed;
@@ -24,6 +25,8 @@ public class Enemy : MonoBehaviour
         speed = startSpeed;
         health = startHealth;
         player = FindObjectOfType<PlayerStats>();
+        waveSpawner = FindObjectOfType<WaveSpawner>();
+        bounty = bounty * (waveSpawner.getWaveIndex() + 1);
     }
 
     public void TakeDamage(float damage)
@@ -77,7 +80,14 @@ public class Enemy : MonoBehaviour
         isAlive = false;
         player.ChangeLive();
         WaveSpawner.AliveCounter--;
-        Destroy(gameObject);
+        if (Application.isPlaying)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DestroyImmediate(gameObject);
+        }
     }
 
 
@@ -101,5 +111,9 @@ public class Enemy : MonoBehaviour
     public void setPlayer(PlayerStats _player)
     {
         player = _player;
+    }
+    public void setSpawner(WaveSpawner _spawner)
+    {
+        waveSpawner = _spawner;
     }
 }
