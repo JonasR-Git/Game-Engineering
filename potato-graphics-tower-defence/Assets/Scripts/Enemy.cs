@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
     {
         speed = startSpeed;
         health = startHealth;
-        player = FindObjectOfType<PlayerStats>();
+        player = PlayerStats.instance;
         waveSpawner = FindObjectOfType<WaveSpawner>();
         bounty = bounty * (waveSpawner.getWaveIndex() + 1);
     }
