@@ -40,13 +40,13 @@ public class Builder : MonoBehaviour
     {
         if (selectedNode == node)
         {
-            DeselctNode();
+            DeselectNode();
             return;
         }
         selectedNode = node;
     }
 
-    public void DeselctNode()
+    public void DeselectNode()
     {
         selectedNode = null;
     }
