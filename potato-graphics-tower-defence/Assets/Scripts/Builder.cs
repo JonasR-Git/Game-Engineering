@@ -31,6 +31,7 @@ public class Builder : MonoBehaviour
     {
         turretToBuild = turret;
     }
+
     public GameObject GetTurretToBuild()
     {
         return turretToBuild;
