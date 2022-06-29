@@ -67,7 +67,7 @@ public class Node : MonoBehaviour
 
     private void BuildTurret()
     {
-        GameObject turretToBuild = builder.GetTurretToBuild();
-        Instantiate(turretToBuild, transform.position + offsetPos, transform.rotation);
+        TurretPrefabs turretToBuild = builder.GetTurretToBuild();
+        Instantiate(turretToBuild.turretPrefab, transform.position + offsetPos, transform.rotation);
     }
 }

@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class TurretSelection : MonoBehaviour
 {
+
+    public TurretPrefabs machineGun;
+    public TurretPrefabs LaserTurret;
+
     Builder builder;
 
     private void Start()
@@ -11,13 +15,13 @@ public class TurretSelection : MonoBehaviour
         builder = Builder.instance;
     }
 
-    public void PurchaseMachineGun()
+    public void SelectMachineGun()
     {
-        builder.SetTurretToBuild(builder.MachineGunPrefab);
+        builder.SetTurretToBuild(machineGun);
         Debug.Log("MachineGun");
     }
 
-    public void PurchaseAnotherGun()
+    public void SelectAnotherGun()
     {
         //TODO to add with new turrets
     }

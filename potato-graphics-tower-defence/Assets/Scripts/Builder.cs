@@ -19,7 +19,7 @@ public class Builder : MonoBehaviour
 
 
 
-    private GameObject turretToBuild;
+    private TurretPrefabs turretToBuild;
 
     public GameObject MachineGunPrefab;
     
@@ -27,12 +27,12 @@ public class Builder : MonoBehaviour
 
 
 
-    public void SetTurretToBuild(GameObject turret)
+    public void SetTurretToBuild(TurretPrefabs turret)
     {
         turretToBuild = turret;
     }
 
-    public GameObject GetTurretToBuild()
+    public TurretPrefabs GetTurretToBuild()
     {
         return turretToBuild;
     }
