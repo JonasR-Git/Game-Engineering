@@ -17,6 +17,8 @@ public class Turret : MonoBehaviour
     public float rotationSpeed = 15f;
     public float bulletSpeed = 50f;
     public float damage = 50f;
+    public bool normalDamage = true;
+    public string modifier = "noModifier";
 
     [Header("Unity Stuff")]
 

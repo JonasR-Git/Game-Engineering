@@ -15,6 +15,7 @@ public class Node : MonoBehaviour
     private GameObject turret = null;
 
     Builder builder;
+    PlayerStats player;
 
     private void Start()
     {
@@ -22,6 +23,7 @@ public class Node : MonoBehaviour
         normalColor = render.material.color;
 
         builder = Builder.instance;
+        player = PlayerStats.instance;
     }
 
     private void OnMouseEnter()
@@ -30,7 +32,7 @@ public class Node : MonoBehaviour
         {
             return;
         }
-        if (builder.GetTurretToBuild() == null)
+        if (!builder.CanBuildTurret)
         {
             return;
         }
@@ -39,10 +41,6 @@ public class Node : MonoBehaviour
 
     private void OnMouseExit()
     {
-        if (builder.GetTurretToBuild() == null)
-        {
-            return;
-        }
         render.material.color = normalColor;
     }
 
@@ -52,7 +50,7 @@ public class Node : MonoBehaviour
         {
             return;
         }
-        if (builder.GetTurretToBuild() == null)
+        if (!builder.CanBuildTurret)
         {
             return; // TurretToBuild shouldn't be null
         }
@@ -62,12 +60,20 @@ public class Node : MonoBehaviour
             //TODO sale the tower options
             return;
         }
-        BuildTurret();
+        BuildTurret(builder.GetTurretToBuild());
     }
 
-    private void BuildTurret()
+    private void BuildTurret(TurretPrefabs turretToBuild)
     {
-        TurretPrefabs turretToBuild = builder.GetTurretToBuild();
+ 
+        if(player.getMoney() < turretToBuild.cost)
+        {
+            Debug.Log("not enough money to build the turret");
+            return;
+        }
+
+        player.ChangeMoney(turretToBuild.cost);
         Instantiate(turretToBuild.turretPrefab, transform.position + offsetPos, transform.rotation);
+        Debug.Log("turret Builded");
     }
 }

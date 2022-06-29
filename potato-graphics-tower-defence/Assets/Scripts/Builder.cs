@@ -51,4 +51,6 @@ public class Builder : MonoBehaviour
     {
         selectedNode = null;
     }
+
+    public bool CanBuildTurret { get { return turretToBuild != null; } }
 }
