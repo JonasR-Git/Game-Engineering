@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     public float startHealth = 100;
     public int startArmor = 0;
     public int startResistance = 0;
-    public int bounty = 10;
+    public int bounty = 1;
     public int payload = 1;
 
     private PlayerStats player;
@@ -82,7 +82,7 @@ public class Enemy : MonoBehaviour
     public void ReachedEnd()
     {
         isAlive = false;
-        player.ChangeLive();
+        player.ChangeLive(payload);
         WaveSpawner.AliveCounter--;
         if (Application.isPlaying)
         {

@@ -45,11 +45,12 @@ public class PlayerStats : MonoBehaviour
     {
         money += bounty;
     }
-    public void ChangeLive()
+    public void ChangeLive(int payload)
     {
-        --lives;
-        if (lives == 0)
+        lives = lives - payload;
+        if (lives <= 0)
         {
+            //Add Failure Sound here
             SceneManager.LoadScene("Main Menu");
         }
     }

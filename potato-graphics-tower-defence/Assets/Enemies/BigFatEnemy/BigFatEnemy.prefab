@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9203942147852812856}
   - component: {fileID: -732351364567619351}
   m_Layer: 0
-  m_Name: Enemy_Base
+  m_Name: BigFatEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,7 +111,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16173c38f1f2f2c478dcbd1243c880a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 10
+  startSpeed: 6
+  startHealth: 600
+  startArmor: 10
+  startResistance: 1
+  bounty: 80
+  payload: 5
   speed: 5
   healthBar: {fileID: 0}
 --- !u!114 &-732351364567619351
