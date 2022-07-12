@@ -29,7 +29,7 @@ public class Node : MonoBehaviour
 
         if (turret != null)
         {
-            PreBuildTurret();
+            turret = (GameObject)Instantiate(turret, GetBuildPosition(), Quaternion.identity);
         }
 
 
