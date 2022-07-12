@@ -8964,6 +8964,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a42794a515b634c9536ff96e143a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  machineGun:
+    turretPrefab: {fileID: 737814690532576627, guid: b00c248cb92eef94688dad15c1914cb9, type: 3}
+    cost: 50
+  LaserTurret:
+    turretPrefab: {fileID: 737814690532576627, guid: b00c248cb92eef94688dad15c1914cb9, type: 3}
+    cost: 50
 --- !u!1001 &1004796917
 PrefabInstance:
   m_ObjectHideFlags: 0

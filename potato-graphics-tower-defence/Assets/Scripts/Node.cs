@@ -12,7 +12,9 @@ public class Node : MonoBehaviour
     private Color normalColor;
     private Renderer render;
 
-    private GameObject turret = null;
+
+    [Header("Preplaced Turret")]
+    public GameObject turret = null;
 
     Builder builder;
     PlayerStats player;
@@ -24,6 +26,23 @@ public class Node : MonoBehaviour
 
         builder = Builder.instance;
         player = PlayerStats.instance;
+
+        if (turret != null)
+        {
+            PreBuildTurret();
+        }
+
+
+    }
+
+    public void PreBuildTurret()
+    {
+        //GameObject turret = (GameObject)Instantiate(turret, GetBuildPosition(), Quaternion.identity);
+    }
+
+    public Vector3 GetBuildPosition()
+    {
+        return transform.position + offsetPos;
     }
 
     private void OnMouseEnter()
@@ -57,23 +76,10 @@ public class Node : MonoBehaviour
 
         if (turret != null)
         {
+            Debug.Log("Already placed a tower on this tile");
             //TODO sale the tower options
             return;
         }
-        BuildTurret(builder.GetTurretToBuild());
-    }
-
-    private void BuildTurret(TurretPrefabs turretToBuild)
-    {
- 
-        if(player.getMoney() < turretToBuild.cost)
-        {
-            Debug.Log("not enough money to build the turret");
-            return;
-        }
-
-        player.ChangeMoney(turretToBuild.cost);
-        Instantiate(turretToBuild.turretPrefab, transform.position + offsetPos, transform.rotation);
-        Debug.Log("turret Builded");
+        builder.BuildTurretOnNode(this);
     }
 }
