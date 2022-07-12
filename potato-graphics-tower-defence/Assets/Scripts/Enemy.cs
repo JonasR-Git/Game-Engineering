@@ -6,8 +6,12 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     public float startSpeed = 10f;
-    private float startHealth = 100;
-    private int bounty = 10;
+    public float startHealth = 100;
+    public int startArmor = 0;
+    public int startResistance = 0;
+    public int bounty = 10;
+    public int payload = 1;
+
     private PlayerStats player;
     private WaveSpawner waveSpawner;
 
