@@ -114,7 +114,8 @@ MonoBehaviour:
   startSpeed: 6
   startHealth: 150
   startArmor: 5
-  startResistance: 1
+  startResistanceNormal: 0
+  startResistanceEnergy: 1
   bounty: 3
   payload: 1
   speed: 5

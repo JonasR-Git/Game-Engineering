@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9203942147852812856}
   - component: {fileID: -732351364567619351}
   m_Layer: 0
-  m_Name: SlowEnemy
+  m_Name: SlowEnemyNormalRes
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,7 +114,8 @@ MonoBehaviour:
   startSpeed: 6
   startHealth: 150
   startArmor: 5
-  startResistance: 1
+  startResistanceNormal: 1
+  startResistanceEnergy: 0
   bounty: 1
   payload: 3
   speed: 5

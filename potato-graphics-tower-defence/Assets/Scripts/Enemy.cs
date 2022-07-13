@@ -5,10 +5,13 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    public float startSpeed = 10f;
+    //slow:6f, normal:12f, fast 24f
+    public float startSpeed = 12f;
     public float startHealth = 100;
     public int startArmor = 0;
-    public int startResistance = 0;
+    public int startResistanceNormal = 0;
+    public int startResistanceEnergy = 0;
+
     public int bounty = 1;
     public int payload = 1;
 
@@ -35,7 +38,13 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        health -= damage;
+        float applied_damage;
+        float applied_armor;
+        //if damage_type = energy and startResistanceEnergy>=0
+        //elif damage_type = normal and startResistanceEnergy>=0
+        applied_armor = startArmor;
+        applied_damage = damage - damage * applied_armor * (float)0.05;
+        health -= applied_damage;
 
         /*healthBar.fillAmount = health / startHealth;
 

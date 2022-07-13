@@ -16,10 +16,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 43
-    width: 3440
-    height: 1357
+    width: 1920
+    height: 1037
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -44,8 +44,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 3440
-    height: 1357
+    width: 1920
+    height: 1037
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -69,7 +69,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 3440
+    width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -90,8 +90,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1337
-    width: 3440
+    y: 1017
+    width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -114,12 +114,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 3440
-    height: 1307
+    width: 1920
+    height: 987
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 39
+  controlID: 145
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,12 +139,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2902
-    height: 1307
+    width: 1418
+    height: 987
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 16
+  controlID: 146
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,12 +165,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2902
-    height: 720
+    width: 1418
+    height: 604
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 17
+  controlID: 147
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -188,13 +188,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 605
-    height: 720
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 16}
+    width: 291
+    height: 604
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 16}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &9
@@ -212,17 +212,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 605
+    x: 291
     y: 0
-    width: 967
-    height: 720
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 17}
+    width: 138
+    height: 604
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 18}
   m_Panes:
-  - {fileID: 17}
+  - {fileID: 18}
+  - {fileID: 15}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -238,15 +239,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1572
+    x: 429
     y: 0
-    width: 1330
-    height: 720
+    width: 989
+    height: 604
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 15}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &11
@@ -259,23 +260,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 720
-    width: 2902
-    height: 587
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+    y: 604
+    width: 1418
+    height: 383
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 19}
   m_Panes:
-  - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  - {fileID: 20}
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -293,14 +294,14 @@ MonoBehaviour:
   - {fileID: 14}
   m_Position:
     serializedVersion: 2
-    x: 2902
+    x: 1418
     y: 0
-    width: 538
-    height: 1307
+    width: 502
+    height: 987
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 40
+  controlID: 62
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -318,13 +319,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 538
-    height: 1027
+    width: 502
+    height: 776
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 20}
+  m_ActualView: {fileID: 21}
   m_Panes:
-  - {fileID: 20}
+  - {fileID: 21}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &14
@@ -343,17 +344,45 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1027
-    width: 538
-    height: 280
+    y: 776
+    width: 502
+    height: 211
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 22}
   m_Panes:
-  - {fileID: 21}
+  - {fileID: 22}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 455, y: 354}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Asset Store
+    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 291
+    y: 73
+    width: 757
+    height: 767
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -373,10 +402,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1572
+    x: 429
     y: 73
-    width: 1328
-    height: 699
+    width: 987
+    height: 583
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -389,7 +418,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1328, y: 678}
+  m_TargetSize: {x: 987, y: 562}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -404,10 +433,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -664
-    m_HBaseRangeMax: 664
-    m_VBaseRangeMin: -339
-    m_VBaseRangeMax: 339
+    m_HBaseRangeMin: -493.5
+    m_HBaseRangeMax: 493.5
+    m_VBaseRangeMin: -281
+    m_VBaseRangeMax: 281
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -425,29 +454,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1328
-      height: 678
+      width: 987
+      height: 562
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 664, y: 339}
+    m_Translation: {x: 493.5, y: 281}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -664
-      y: -339
-      width: 1328
-      height: 678
+      x: -493.5
+      y: -281
+      width: 987
+      height: 562
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1328, y: 699}
+  m_LastWindowPixelSize: {x: 987, y: 583}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &16
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -469,18 +498,18 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 604
-    height: 699
+    width: 290
+    height: 583
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 3194}
-      m_SelectedIDs: d4f7ffff
-      m_LastClickedID: -2092
-      m_ExpandedIDs: 1afbfffff05e00004e5f000066610000d4620000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 58b7feff22d6feffaa1dffff2c7bffff9085ffffd885ffff948fffff08a5ffff04d2fffffadcffff08fbffffbc8500000c8c0000a6930100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -504,7 +533,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &17
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -524,10 +553,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 605
+    x: 291
     y: 73
-    width: 965
-    height: 699
+    width: 136
+    height: 583
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -549,7 +578,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
       snapOffset: {x: -141, y: 149}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: 5, y: 0}
       snapCorner: 1
       id: unity-grid-and-snap-toolbar
       index: 1
@@ -559,7 +588,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -603,7 +632,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -614,9 +643,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -111, y: 86}
+      snapOffset: {x: 1, y: 86}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 1
+      snapCorner: 0
       id: Orientation
       index: 0
       layout: 4
@@ -744,16 +773,16 @@ MonoBehaviour:
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
   m_Gizmos: 0
   m_OverrideSceneCullingMask: 6917529027641081856
-  m_SceneIsLit: 0
+  m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 46.91004, y: 18.959557, z: 64.06098}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 46.91004, y: 18.959557, z: 64.06098}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -800,13 +829,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.013770215, y: 0.8902964, z: -0.45436847, w: 0.026981216}
+    m_Target: {x: 0.17931278, y: 0.015063397, z: -0.0027404213, w: 0.98367095}
     speed: 2
-    m_Value: {x: 0.013770243, y: 0.8902982, z: -0.4543694, w: 0.02698127}
+    m_Value: {x: 0.17931314, y: 0.015063427, z: -0.002740427, w: 0.9836729}
   m_Size:
-    m_Target: 10.845823
+    m_Target: 10
     speed: 2
-    m_Value: 10.845823
+    m_Value: 10
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -831,7 +860,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &18
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -852,9 +881,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 793
-    width: 2901
-    height: 566
+    y: 677
+    width: 1417
+    height: 362
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -872,22 +901,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Enemies/BaseEnemy
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Enemies/BaseEnemy
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Praktikum_CG\PGTD_Git\Game-Engineering\potato-graphics-tower-defence
+  m_LastProjectPath: C:\Users\Beb\Documents\GitHub\Game-Engineering\potato-graphics-tower-defence
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: 6e640000
-    m_LastClickedID: 25710
-    m_ExpandedIDs: 00000000ee630000f0630000f2630000f4630000f6630000f863000000ca9a3bffffff7f
+    m_SelectedIDs: 56700000
+    m_LastClickedID: 28758
+    m_ExpandedIDs: 00000000a2640000a4640000a6640000a86400002065000022650000266500007c70000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -915,7 +944,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ee630000f0630000f2630000f4630000f6630000f8630000
+    m_ExpandedIDs: 00000000a2640000a4640000a6640000a8640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -971,7 +1000,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 384
---- !u!114 &19
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -999,7 +1028,7 @@ MonoBehaviour:
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &20
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1019,10 +1048,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2902
+    x: 1418
     y: 73
-    width: 537
-    height: 1006
+    width: 501
+    height: 755
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1040,7 +1069,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &21
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1060,21 +1089,21 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2902
-    y: 1100
-    width: 537
-    height: 259
+    x: 1418
+    y: 849
+    width: 501
+    height: 190
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 193
+    ID: 170
     splitterInitialOffset: 158
     currentActiveSplitter: -1
     realSizes:
-    - 86
-    - 103
+    - 55
+    - 65
     relativeSizes:
     - 0.45454547
     - 0.5454545
@@ -1084,7 +1113,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 189
+    lastTotalSize: 120
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -1092,9 +1121,9 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 1
+  m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 21}
+    m_Window: {fileID: 22}
     m_NewResultList:
     - id: 1004
       uniqueId: '[potato-graphics-tower-defence][suite]'
@@ -1113,9 +1142,9 @@ MonoBehaviour:
       parentId: 
       parentUniqueId: 
     - id: 1019
-      uniqueId: '[PlayMode][D:/Praktikum_CG/PGTD_Git/Game-Engineering/potato-graphics-tower-defence/Library/ScriptAssemblies/PlayMode.dll][suite]'
+      uniqueId: '[PlayMode][C:/Users/Beb/Documents/GitHub/Game-Engineering/potato-graphics-tower-defence/Library/ScriptAssemblies/PlayMode.dll][suite]'
       name: PlayMode.dll
-      fullName: D:/Praktikum_CG/PGTD_Git/Game-Engineering/potato-graphics-tower-defence/Library/ScriptAssemblies/PlayMode.dll
+      fullName: C:/Users/Beb/Documents/GitHub/Game-Engineering/potato-graphics-tower-defence/Library/ScriptAssemblies/PlayMode.dll
       resultStatus: 0
       duration: 0
       messages: 
@@ -1132,8 +1161,8 @@ MonoBehaviour:
       uniqueId: PlayMode.dll/[PlayMode][PlayerTests][suite]
       name: PlayerTests
       fullName: PlayerTests
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 1.0345213
       messages: 
       output: 
       stacktrace: 
@@ -1142,16 +1171,18 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1019
+      parentId: 1013
       parentUniqueId: '[PlayMode][D:/Praktikum_CG/PGTD_Git/Game-Engineering/potato-graphics-tower-defence/Library/ScriptAssemblies/PlayMode.dll][suite]'
     - id: 1002
       uniqueId: PlayMode.dll/PlayerTests/[PlayMode][PlayerTests.AddMoneyIfEnemyDies]
       name: AddMoneyIfEnemyDies
       fullName: PlayerTests.AddMoneyIfEnemyDies
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 1.0226538
       messages: 
-      output: 
+      output: 'Only one Player should be instanciate
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1165,9 +1196,9 @@ MonoBehaviour:
       uniqueId: PlayMode.dll/[PlayMode][SceneSwitcherTests][suite]
       name: SceneSwitcherTests
       fullName: SceneSwitcherTests
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.014381
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1175,17 +1206,20 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1019
+      parentId: 1016
       parentUniqueId: '[PlayMode][D:/Praktikum_CG/PGTD_Git/Game-Engineering/potato-graphics-tower-defence/Library/ScriptAssemblies/PlayMode.dll][suite]'
     - id: 1004
       uniqueId: PlayMode.dll/SceneSwitcherTests/[PlayMode][SceneSwitcherTests.SceneSwitcherTestsSimplePasses]
       name: SceneSwitcherTestsSimplePasses
       fullName: SceneSwitcherTests.SceneSwitcherTestsSimplePasses
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.0077284
+      messages: "  Expected: UnityEngine.SceneManagement.Scene\r\n  But was:  UnityEngine.SceneManagement.Scene\r\n"
       output: 
-      stacktrace: 
+      stacktrace: 'at SceneSwitcherTests.SceneSwitcherTestsSimplePasses () [0x0000a]
+        in D:\Praktikum_CG\PGTD_Git\Game-Engineering\potato-graphics-tower-defence\Assets\Editor\Tests\PlayMode\SceneSwitcherTests.cs:18
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1194,12 +1228,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1003
       parentUniqueId: PlayMode.dll/[PlayMode][SceneSwitcherTests][suite]
-    - id: 1005
+    - id: 1001
       uniqueId: PlayMode.dll/[PlayMode][TestEnemy][suite]
       name: TestEnemy
       fullName: TestEnemy
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 14.127224
       messages: 
       output: 
       stacktrace: 
@@ -1208,16 +1242,18 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1019
+      parentId: 1010
       parentUniqueId: '[PlayMode][D:/Praktikum_CG/PGTD_Git/Game-Engineering/potato-graphics-tower-defence/Library/ScriptAssemblies/PlayMode.dll][suite]'
-    - id: 1006
+    - id: 1008
       uniqueId: PlayMode.dll/TestEnemy/[PlayMode][TestEnemy.EnemyTakeDamageAliveAfter]
       name: EnemyTakeDamageAliveAfter
       fullName: TestEnemy.EnemyTakeDamageAliveAfter
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 1.0206124
       messages: 
-      output: 
+      output: 'Only one Player should be instanciate
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1225,16 +1261,18 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
+      parentId: 1001
       parentUniqueId: PlayMode.dll/[PlayMode][TestEnemy][suite]
-    - id: 1007
+    - id: 1009
       uniqueId: PlayMode.dll/TestEnemy/[PlayMode][TestEnemy.EnemyTakeDamageDeadAfter]
       name: EnemyTakeDamageDeadAfter
       fullName: TestEnemy.EnemyTakeDamageDeadAfter
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 1.0074795
       messages: 
-      output: 
+      output: 'Only one Player should be instanciate
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1242,14 +1280,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
+      parentId: 1001
       parentUniqueId: PlayMode.dll/[PlayMode][TestEnemy][suite]
-    - id: 1008
+    - id: 1017
       uniqueId: PlayMode.dll/TestEnemy/[PlayMode][TestEnemy.TestIncreaseMoneyUponEnemyKilledIncreasedBounty]
       name: TestIncreaseMoneyUponEnemyKilledIncreasedBounty
       fullName: TestEnemy.TestIncreaseMoneyUponEnemyKilledIncreasedBounty
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 12.009504
       messages: 
       output: 
       stacktrace: 
@@ -1259,14 +1297,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
+      parentId: 1014
       parentUniqueId: PlayMode.dll/[PlayMode][TestEnemy][suite]
-    - id: 1009
+    - id: 1018
       uniqueId: PlayMode.dll/[PlayMode][TestEnemyMovement][suite]
       name: TestEnemyMovement
       fullName: TestEnemyMovement
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 10.382973
       messages: 
       output: 
       stacktrace: 
@@ -1275,16 +1313,18 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1019
+      parentId: 1025
       parentUniqueId: '[PlayMode][D:/Praktikum_CG/PGTD_Git/Game-Engineering/potato-graphics-tower-defence/Library/ScriptAssemblies/PlayMode.dll][suite]'
-    - id: 1012
+    - id: 1021
       uniqueId: PlayMode.dll/TestEnemyMovement/[PlayMode][TestEnemyMovement.EnemyChangesDirection]
       name: EnemyChangesDirection
       fullName: TestEnemyMovement.EnemyChangesDirection
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 3.1201396
       messages: 
-      output: 
+      output: 'Only one Player should be instanciate
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1292,16 +1332,18 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1009
+      parentId: 1018
       parentUniqueId: PlayMode.dll/[PlayMode][TestEnemyMovement][suite]
-    - id: 1014
+    - id: 1023
       uniqueId: PlayMode.dll/TestEnemyMovement/[PlayMode][TestEnemyMovement.EnemyGettingFaster]
       name: EnemyGettingFaster
       fullName: TestEnemyMovement.EnemyGettingFaster
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 2.0127404
       messages: 
-      output: 
+      output: 'Only one Player should be instanciate
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1309,16 +1351,18 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1009
+      parentId: 1018
       parentUniqueId: PlayMode.dll/[PlayMode][TestEnemyMovement][suite]
-    - id: 1015
+    - id: 1024
       uniqueId: PlayMode.dll/TestEnemyMovement/[PlayMode][TestEnemyMovement.EnemyGettingNormalSpeed]
       name: EnemyGettingNormalSpeed
       fullName: TestEnemyMovement.EnemyGettingNormalSpeed
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 1.0096911
       messages: 
-      output: 
+      output: 'Only one Player should be instanciate
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1326,16 +1370,18 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1009
+      parentId: 1018
       parentUniqueId: PlayMode.dll/[PlayMode][TestEnemyMovement][suite]
-    - id: 1013
+    - id: 1022
       uniqueId: PlayMode.dll/TestEnemyMovement/[PlayMode][TestEnemyMovement.EnemyGettingSlowed]
       name: EnemyGettingSlowed
       fullName: TestEnemyMovement.EnemyGettingSlowed
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 2.0097673
       messages: 
-      output: 
+      output: 'Only one Player should be instanciate
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1343,16 +1389,18 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1009
+      parentId: 1018
       parentUniqueId: PlayMode.dll/[PlayMode][TestEnemyMovement][suite]
-    - id: 1011
+    - id: 1020
       uniqueId: PlayMode.dll/TestEnemyMovement/[PlayMode][TestEnemyMovement.EnemyMovesAfterGameStarts]
       name: EnemyMovesAfterGameStarts
       fullName: TestEnemyMovement.EnemyMovesAfterGameStarts
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 1.2136759
       messages: 
-      output: 
+      output: 'Only one Player should be instanciate
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1360,16 +1408,18 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1009
+      parentId: 1018
       parentUniqueId: PlayMode.dll/[PlayMode][TestEnemyMovement][suite]
-    - id: 1010
+    - id: 1019
       uniqueId: PlayMode.dll/TestEnemyMovement/[PlayMode][TestEnemyMovement.EnemySpawnsInFirstWave]
       name: EnemySpawnsInFirstWave
       fullName: TestEnemyMovement.EnemySpawnsInFirstWave
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 1.009227
       messages: 
-      output: 
+      output: 'Only one Player should be instanciate
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1377,16 +1427,21 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1009
+      parentId: 1018
       parentUniqueId: PlayMode.dll/[PlayMode][TestEnemyMovement][suite]
     - id: 1016
       uniqueId: PlayMode.dll/[PlayMode][TestUI][suite]
       name: TestUI
       fullName: TestUI
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
+      resultStatus: 2
+      duration: 2.0228589
+      messages: One or more child tests had errors
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1399,11 +1454,19 @@ MonoBehaviour:
       uniqueId: PlayMode.dll/TestUI/[PlayMode][TestUI.SceneSwitcherIn]
       name: SceneSwitcherIn
       fullName: TestUI.SceneSwitcherIn
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 2
+      duration: 1.0076156
+      messages: "  Expected: UnityEngine.SceneManagement.Scene\r\n  But was:  \"Testscene\"\r\n"
+      output: 'Only one Player should be instanciate
+
+'
+      stacktrace: 'at TestUI+<SceneSwitcherIn>d__1.MoveNext () [0x0004a] in D:\Praktikum_CG\PGTD_Git\Game-Engineering\potato-graphics-tower-defence\Assets\Editor\Tests\PlayMode\TestUI.cs:19
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
+        in D:\Praktikum_CG\PGTD_Git\Game-Engineering\potato-graphics-tower-defence\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1416,11 +1479,19 @@ MonoBehaviour:
       uniqueId: PlayMode.dll/TestUI/[PlayMode][TestUI.SceneSwitcherOut]
       name: SceneSwitcherOut
       fullName: TestUI.SceneSwitcherOut
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 2
+      duration: 1.0097026
+      messages: "  Expected: UnityEngine.SceneManagement.Scene\r\n  But was:  \"Testscene\"\r\n"
+      output: 'Only one Player should be instanciate
+
+'
+      stacktrace: 'at TestUI+<SceneSwitcherOut>d__2.MoveNext () [0x0004a] in D:\Praktikum_CG\PGTD_Git\Game-Engineering\potato-graphics-tower-defence\Assets\Editor\Tests\PlayMode\TestUI.cs:28
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
+        in D:\Praktikum_CG\PGTD_Git\Game-Engineering\potato-graphics-tower-defence\Library\PackageCache\com.unity.test-framework@1.1.31\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1429,7 +1500,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1016
       parentUniqueId: PlayMode.dll/[PlayMode][TestUI][suite]
-    m_ResultText: 
+    m_ResultText: 'SceneSwitcherTests (0,014s)
+
+      ---
+
+      One or more child
+      tests had errors'
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
@@ -1463,7 +1539,7 @@ MonoBehaviour:
       - Uncategorized
     m_SelectedOption: 0
   m_EditModeTestListGUI:
-    m_Window: {fileID: 21}
+    m_Window: {fileID: 22}
     m_NewResultList:
     - id: 1000
       uniqueId: '[potato-graphics-tower-defence][suite]'
